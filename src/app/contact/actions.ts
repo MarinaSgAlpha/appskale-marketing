@@ -1,14 +1,14 @@
 "use server";
 
-import sgMail from "@sendgrid/mail";
+import { Resend } from "resend";
 
 /**
  * Contact form submission.
  *
  * Required env vars (set in .env.local for dev, project env for prod):
- *   SENDGRID_API_KEY    — your SendGrid API key
- *   CONTACT_TO_EMAIL    — inbox that receives form submissions (e.g. support@appskale.ai)
- *   CONTACT_FROM_EMAIL  — verified single-sender / domain in SendGrid (e.g. no-reply@appskale.ai)
+ *   RESEND_API_KEY      — your Resend API key (https://resend.com/api-keys)
+ *   CONTACT_TO_EMAIL    — inbox that receives form submissions (e.g. hello@appskale.ai)
+ *   CONTACT_FROM_EMAIL  — sender on a domain verified in Resend (e.g. hello@appskale.ai)
  *
  * Optional:
  *   CONTACT_BCC_EMAIL   — comma-separated list of BCC addresses
@@ -134,7 +134,7 @@ export async function submitContact(
     return { status: "error", message: "That email address looks off." };
   }
 
-  const apiKey = process.env.SENDGRID_API_KEY;
+  const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL;
   const fromEmail = process.env.CONTACT_FROM_EMAIL;
   const bccRaw = process.env.CONTACT_BCC_EMAIL;
@@ -142,19 +142,17 @@ export async function submitContact(
   if (!apiKey || !toEmail || !fromEmail) {
     if (process.env.NODE_ENV !== "production") {
       console.warn(
-        "[contact] SendGrid env vars missing — skipping send. Set SENDGRID_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL in .env.local.",
+        "[contact] Resend env vars missing — skipping send. Set RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL in .env.local.",
       );
       console.log("[contact] payload:", payload);
       return { status: "success" };
     }
-    console.error("[contact] SendGrid env vars missing in production.");
+    console.error("[contact] Resend env vars missing in production.");
     return {
       status: "error",
-      message: "We couldn't send your message just now. Please email support@appskale.ai directly.",
+      message: "We couldn't send your message just now. Please email hello@appskale.ai directly.",
     };
   }
-
-  sgMail.setApiKey(apiKey);
 
   const bcc = bccRaw
     ? bccRaw
@@ -163,21 +161,31 @@ export async function submitContact(
         .filter(Boolean)
     : undefined;
 
+  const resend = new Resend(apiKey);
+
   try {
-    await sgMail.send({
-      to: toEmail,
+    const { error } = await resend.emails.send({
       from: fromEmail,
+      to: toEmail,
       ...(bcc && bcc.length > 0 ? { bcc } : {}),
       replyTo: payload.email,
       subject: `New contact: ${payload.name} ${payload.surname} @ ${payload.companyName}`,
       text: buildPlainText(payload),
       html: buildHtml(payload),
     });
+
+    if (error) {
+      console.error("[contact] Resend send error:", error);
+      return {
+        status: "error",
+        message: "We couldn't send your message just now. Please try again or email hello@appskale.ai directly.",
+      };
+    }
   } catch (err) {
-    console.error("[contact] SendGrid send failed:", err);
+    console.error("[contact] Resend send failed:", err);
     return {
       status: "error",
-      message: "We couldn't send your message just now. Please try again or email support@appskale.ai directly.",
+      message: "We couldn't send your message just now. Please try again or email hello@appskale.ai directly.",
     };
   }
 
