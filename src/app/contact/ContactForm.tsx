@@ -26,10 +26,10 @@ export function ContactForm() {
           We&apos;ve got your message and will reply within 24 hours. In the
           meantime, you can email us directly at{" "}
           <a
-            href="mailto:support@appskale.ai"
+            href="mailto:hello@appskale.ai"
             className="underline-offset-4 hover:underline text-purple-700"
           >
-            support@appskale.ai
+            hello@appskale.ai
           </a>
           .
         </p>
@@ -43,45 +43,18 @@ export function ContactForm() {
       className="flex flex-col gap-5"
       noValidate
     >
-      {/* Honeypot fields — keep first, hidden from real users and screen readers. */}
+      {/* Honeypot fields — invisible to real users; browsers don't autofill these uncommon names. */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-[9999px] h-0 w-0 overflow-hidden"
       >
         <label>
-          Website <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+          Leave this empty{" "}
+          <input type="text" name="hp_website" tabIndex={-1} autoComplete="off" />
         </label>
         <label>
-          Company URL{" "}
-          <input type="text" name="company_url" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Message <input type="text" name="message_bot" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Subject <input type="text" name="subject" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Title <input type="text" name="title" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Description{" "}
-          <input type="text" name="description" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Feedback <input type="text" name="feedback" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Notes <input type="text" name="notes" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Details <input type="text" name="details" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Remarks <input type="text" name="remarks" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Comments <input type="text" name="comments" tabIndex={-1} autoComplete="off" />
+          Also leave this empty{" "}
+          <input type="text" name="hp_url" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
 

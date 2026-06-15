@@ -26,19 +26,7 @@ export type ContactFormState =
   | { status: "success" }
   | { status: "error"; message: string };
 
-const HONEYPOT_FIELDS = [
-  "website",
-  "company_url",
-  "message_bot",
-  "subject",
-  "title",
-  "description",
-  "feedback",
-  "notes",
-  "details",
-  "remarks",
-  "comments",
-] as const;
+const HONEYPOT_FIELDS = ["hp_website", "hp_url"] as const;
 
 function getString(formData: FormData, name: string): string {
   const v = formData.get(name);
