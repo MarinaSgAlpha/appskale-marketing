@@ -1,26 +1,151 @@
 @import "tailwindcss";
 
+/* ===========================================================================
+   Brand tokens — extracted from the live Framer site.
+   Names map to the variables documented in TASKS.md §2.1.
+   =========================================================================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --purple-50: #fbf5ff;
+  --purple-100: #f7f0fa;
+  --purple-200: #ecd8f3;
+  --purple-300: #b49cc5;
+  --purple-400: #9f80da;
+  --purple-500: #8765d7;
+  --purple-600: #7d5f92;
+  --purple-700: #69527a;
+  --purple-800: #573e69;
+  --purple-900: #483953;
+  --purple-950: #271f36;
+
+  --pink-300: #da9ef0;
+  --blue-300: #cccdff;
+  --indigo-400: #999bff;
+
+  --glass-white: rgba(255, 255, 255, 0.5);
+  --glass-white-strong: rgba(255, 255, 255, 0.8);
+
+  /* Text */
+  --text-heading: var(--purple-900);
+  --text-body: rgba(87, 62, 105, 0.8); /* purple-800 @ 80% */
+  --text-muted: var(--purple-300);
+
+  /* Gradients */
+  --gradient-light-card: linear-gradient(
+    140deg,
+    rgba(204, 205, 255, 0.7) 4%,
+    rgba(235, 203, 247, 0.7) 60%,
+    rgba(166, 140, 225, 0.7) 103%
+  );
+  --gradient-primary-btn: linear-gradient(
+    140deg,
+    #999bff 0%,
+    #8765d7 52%,
+    #da9ef0 100%
+  );
+  --gradient-secondary-btn: linear-gradient(180deg, #aa90e1 0%, #9c7dd8 100%);
+
+  /* Shadow */
+  --shadow-card: 0 1px 2px rgba(39, 31, 54, 0.04),
+    0 8px 24px -8px rgba(39, 31, 54, 0.08);
+  --shadow-elevated: 0 4px 8px rgba(39, 31, 54, 0.06),
+    0 24px 48px -12px rgba(39, 31, 54, 0.12);
 }
 
+/* ===========================================================================
+   Tailwind v4 theme — expose tokens as utilities.
+   =========================================================================== */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts (wired up in src/app/fonts.ts) */
+  --font-sans: var(--font-satoshi), var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-inter), var(--font-satoshi), system-ui, sans-serif;
+
+  /* Brand colors as Tailwind palette */
+  --color-purple-50: var(--purple-50);
+  --color-purple-100: var(--purple-100);
+  --color-purple-200: var(--purple-200);
+  --color-purple-300: var(--purple-300);
+  --color-purple-400: var(--purple-400);
+  --color-purple-500: var(--purple-500);
+  --color-purple-600: var(--purple-600);
+  --color-purple-700: var(--purple-700);
+  --color-purple-800: var(--purple-800);
+  --color-purple-900: var(--purple-900);
+  --color-purple-950: var(--purple-950);
+
+  --color-brand-pink: var(--pink-300);
+  --color-brand-blue: var(--blue-300);
+  --color-brand-indigo: var(--indigo-400);
+
+  --color-ink: var(--purple-900);
+  --color-body: var(--purple-800);
+  --color-muted: var(--purple-300);
+
+  /* Container widths used across the site */
+  --spacing-page: 1200px;
+
+  /* Radii used by cards/buttons */
+  --radius-card: 1rem;
+  --radius-card-lg: 1.75rem;
+  --radius-pill: 999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===========================================================================
+   Base typography + body.
+   =========================================================================== */
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv01";
+}
+
+/* Headings default to the display stack (Inter Display) with tight tracking. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+/* Form controls inherit the same font stack. */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smooth in-page anchor scrolling for the home page nav. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection colour matches the brand. */
+::selection {
+  background: var(--purple-200);
+  color: var(--purple-900);
 }

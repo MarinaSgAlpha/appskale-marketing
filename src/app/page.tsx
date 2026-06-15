@@ -1,65 +1,81 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import { Hero } from "@/components/sections/Hero";
+import { FeatureRow } from "@/components/sections/FeatureRow";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { HowItWorks } from "@/components/sections/HowItWorks";
+import { FAQ } from "@/components/sections/FAQ";
+import { URLS } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Apple Search Ads analytics & keyword ROAS",
+  description:
+    "The Apple Search Ads analytics platform to track conversions and ROAS. AppSkale provides keyword-level LTV and revenue data, so you see which campaigns drive real subscriptions—not just installs.",
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <Hero />
+
+      <FeatureRow
+        eyebrow="Real-time conversion tracking"
+        title={
+          <>
+            Your best keyword in Canada
+            <br />
+            might be your worst in the US.
+          </>
+        }
+        body={
+          <p>
+            Apple shows you country-level performance, but not keyword-level ROI
+            by country. So you don&apos;t know which specific keywords to scale
+            in Canada vs which to pause. AppSkale shows you keyword performance
+            by country, so you can scale the right keywords in the right
+            regions.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        }
+        imageSrc="/images/feature-countries.webp"
+        imageAlt="Spreadsheet showing per-app, per-country Apple Search Ads ROI calculations"
+        imageWidth={2048}
+        imageHeight={1336}
+        imagePosition="left"
+        glowColor="purple"
+        cta={{ label: "Get Started Free", href: URLS.signup }}
+      />
+
+      <FeatureRow
+        eyebrow="REVENUECAT + APPLE SEARCH ADS"
+        title={<>Stop calculating LTV in spreadsheets</>}
+        body={
+          <p>
+            Most app developers export Apple Search Ads data and RevenueCat
+            transactions, then spend hours matching purchases to keywords in
+            spreadsheets. Even then, you&apos;re working with approximations and
+            can&apos;t easily slice the data different ways. AppSkale
+            automatically tracks every subscription back to its keyword,
+            campaign, and country. Want to see 30-day LTV by keyword? 90-day
+            LTV by country? Revenue from a specific campaign last month? Just
+            filter and view - no formulas, no pivot tables, no manual work. See
+            keyword-level LTV across any time range, compare campaign
+            performance by country, track cohort retention automatically. The
+            data updates in real-time as purchases happen. Connect Apple Search
+            Ads and RevenueCat once. Setup takes 20 minutes, then attribution
+            runs automatically forever.
+          </p>
+        }
+        imageSrc="/images/feature-ltv.webp"
+        imageAlt="AppSkale LTV Analytics card showing average LTV, total subscribers, total revenue, and weekly cohort retention"
+        imageWidth={2048}
+        imageHeight={1426}
+        imagePosition="right"
+        glowColor="pink"
+        cta={{ label: "Get Started Free", href: URLS.signup }}
+      />
+
+      <Testimonials />
+      <HowItWorks />
+      <FAQ />
+    </>
   );
 }
