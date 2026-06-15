@@ -9,7 +9,7 @@ export function proxy(request: NextRequest) {
     url.host = "appskale.ai";
     url.protocol = "https:";
     url.port = "";
-    return NextResponse.redirect(url, 308);
+    return NextResponse.redirect(url, 301);
   }
 
   return NextResponse.next();
