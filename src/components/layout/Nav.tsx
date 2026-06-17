@@ -113,10 +113,10 @@ export function Nav() {
       <div
         className={cn(
           "mx-auto flex h-14 max-w-[1200px] items-center justify-between gap-4 rounded-full px-3 sm:pl-5 sm:pr-3",
-          "border border-white/60",
+          "border border-white/70",
           scrolled
-            ? "bg-white/80 shadow-[0_4px_24px_-8px_rgba(39,31,54,0.12)] backdrop-blur-xl"
-            : "bg-white/55 backdrop-blur-lg",
+            ? "bg-white/95 shadow-[0_4px_24px_-8px_rgba(39,31,54,0.12)] backdrop-blur-xl"
+            : "bg-white/90 shadow-[0_4px_18px_-10px_rgba(39,31,54,0.18)] backdrop-blur-lg",
         )}
       >
         <Link href="/" aria-label="AppSkale home" className="flex items-center">
