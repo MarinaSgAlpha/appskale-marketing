@@ -91,40 +91,42 @@
 
 /* ===========================================================================
    Base typography + body.
+   Wrapped in @layer base so Tailwind utility classes (e.g. `text-white`
+   on a dark page) can override the defaults.
    =========================================================================== */
-html {
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+@layer base {
+  html {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
 
-body {
-  background: #ffffff;
-  color: var(--text-body);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "ss01", "cv01";
-}
+  body {
+    background: #ffffff;
+    color: var(--text-body);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv01";
+  }
 
-/* Headings default to the display stack (Inter Display) with tight tracking. */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-display);
-  color: var(--text-heading);
-  letter-spacing: -0.02em;
-  font-weight: 500;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--text-heading);
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
 
-/* Form controls inherit the same font stack. */
-input,
-textarea,
-select,
-button {
-  font-family: inherit;
+  input,
+  textarea,
+  select,
+  button {
+    font-family: inherit;
+  }
 }
 
 /* Respect users who prefer reduced motion. */
