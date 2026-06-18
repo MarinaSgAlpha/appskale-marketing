@@ -189,7 +189,7 @@ export default function SetupGuidePage() {
 
       {/* Body */}
       <Section spacing="tight">
-        <Container size="narrow">
+        <Container>
           <div className="grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
             {/* TOC (sticky on desktop) */}
             <aside className="hidden lg:block">
