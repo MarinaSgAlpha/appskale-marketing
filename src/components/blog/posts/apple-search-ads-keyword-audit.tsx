@@ -41,14 +41,14 @@ export function KeywordAudit30DayBody() {
       </P>
       <UL>
         <LI>
-          <Strong>Spend</Strong> &mdash; from your Apple Search Ads dashboard.
+          <Strong>Spend</Strong>{" "}&mdash; from your Apple Search Ads dashboard.
         </LI>
         <LI>
-          <Strong>Organic rank trend</Strong> &mdash; from a rank tracker like
+          <Strong>Organic rank trend</Strong>{" "}&mdash; from a rank tracker like
           AppTweak or AppFigures.
         </LI>
         <LI>
-          <Strong>Revenue / LTV per keyword</Strong> &mdash; the column almost
+          <Strong>Revenue / LTV per keyword</Strong>{" "}&mdash; the column almost
           nobody connects, because ASA stops at installs and your revenue lives
           in RevenueCat.
         </LI>
@@ -125,7 +125,7 @@ export function KeywordAudit30DayBody() {
       <H3>Scale</H3>
       <P>
         The whole audit exists to find these. A keyword belongs here only when
-        its LTV clears its CPA with margin <Em>and</Em> there&rsquo;s auction
+        its LTV clears its CPA with margin <Em>and</Em>{" "}there&rsquo;s auction
         share left to win. Both conditions matter: a profitable keyword
         you&rsquo;ve already maxed is a Keep, not a Scale. When you find a real
         Scale keyword, don&rsquo;t nudge the budget &mdash; push it. (If
@@ -175,20 +175,20 @@ export function KeywordAudit30DayBody() {
       </P>
       <UL>
         <LI>
-          <Strong>Seasonality</Strong> &mdash; a December spike or summer dip
+          <Strong>Seasonality</Strong>{" "}&mdash; a December spike or summer dip
           can flatter or punish a keyword that&rsquo;s actually steady.
         </LI>
         <LI>
-          <Strong>Competitor launches</Strong> &mdash; a new entrant on your
+          <Strong>Competitor launches</Strong>{" "}&mdash; a new entrant on your
           term can crater installs without anything changing on your side.
         </LI>
         <LI>
-          <Strong>App Store featuring</Strong> &mdash; a feature placement
+          <Strong>App Store featuring</Strong>{" "}&mdash; a feature placement
           inflates organic installs and can make paid keywords look better than
           they are.
         </LI>
         <LI>
-          <Strong>Sample size</Strong> &mdash; a keyword with 8 installs in 30
+          <Strong>Sample size</Strong>{" "}&mdash; a keyword with 8 installs in 30
           days doesn&rsquo;t have enough signal to bucket confidently. Give it
           another cycle.
         </LI>
@@ -202,7 +202,8 @@ export function KeywordAudit30DayBody() {
         trackers, and spreadsheets all leave out.
       </P>
       <P>
-        That&rsquo;s the gap <A href="https://appskale.ai/">AppSkale</A> closes:
+        That&rsquo;s the gap <A href="https://appskale.ai/">AppSkale</A>{" "}
+        closes:
         it ties each keyword to the subscription revenue it actually produces
         and puts spend, rank, and revenue on the same screen &mdash; so the
         monthly audit is an hour of decisions instead of a week of stitching
