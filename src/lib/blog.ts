@@ -54,6 +54,72 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-keyword-audit",
+    title:
+      "The 30-Day Keyword Audit: Which Keywords to Kill, Keep, and Scale",
+    description:
+      "A monthly Apple Search Ads keyword audit framework. Sort every keyword into kill, keep, scale, or investigate using spend, organic rank, and revenue per keyword.",
+    image: {
+      src: "/images/blog/apple-search-ads-keyword-audit/cover.png",
+      alt: "A four-quadrant Apple Search Ads keyword audit framework sorting keywords into kill, keep, scale, and investigate based on revenue and install volume.",
+      width: 1024,
+      height: 576,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Keyword Audit" },
+      { name: "App Store Optimization" },
+      { name: "ROAS Analysis" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that puts spend, organic rank, and subscription revenue per keyword on the same screen for fast monthly audits.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "AppTweak",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description: "A third-party App Store keyword rank tracking tool.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "AppFigures",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An App Store analytics and keyword rank tracking tool.",
+      },
+    ],
+    keywords: [
+      "Apple Search Ads keyword audit",
+      "ASA keyword audit framework",
+      "which keywords to pause Apple Search Ads",
+      "scale Apple Search Ads keywords",
+      "keyword level ROAS audit",
+      "Apple Search Ads optimization checklist",
+      "revenue per keyword ASA",
+      "ASA budget reallocation",
+      "monthly Apple Search Ads review",
+      "kill keep scale keywords",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "long-tail-keywords-main-keyword-rank",
     title:
       "How long-tail keywords push your main keyword's App Store rank",
