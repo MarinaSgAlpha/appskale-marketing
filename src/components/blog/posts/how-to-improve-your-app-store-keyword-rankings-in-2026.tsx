@@ -173,7 +173,7 @@ export function ImproveKeywordRankings2026Body() {
       </P>
       <P>
         If you&rsquo;re running Apple Search Ads as part of your ASO strategy,{" "}
-        <A href="https://appskale.ai/">AppSkale</A> lets you track which
+        <A href="https://appskale.ai/">AppSkale</A>{" "}lets you track which
         keywords actually make money &mdash; and whether that spend is paying
         off over months, not just the first week.{" "}
         <A href="https://appskale.ai/">Check it out.</A>

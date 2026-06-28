@@ -49,7 +49,7 @@ export function AppsFlyerAlternativeIndieDevsBody() {
         keyword level, you scale the whole campaign equally.
       </P>
       <P>
-        <Strong>The result?</Strong> Your winners are subsidizing your losers.
+        <Strong>The result?</Strong>{" "}Your winners are subsidizing your losers.
         Your profit margin stays stuck at &ldquo;barely break-even&rdquo;
         because you&rsquo;re pouring budget into black-hole keywords that will
         never pay back.
@@ -169,12 +169,12 @@ export function AppsFlyerAlternativeIndieDevsBody() {
           attribution to talk directly to your bank account.
         </LI>
         <LI>
-          <Strong>You are a Growth Lead:</Strong> Even if you have
+          <Strong>You are a Growth Lead:</Strong>{" "}Even if you have
           &ldquo;Enterprise&rdquo; tools, you are tired of the back-and-forth
           between dashboards to find simple answers.
         </LI>
         <LI>
-          <Strong>You want to Scale Easily:</Strong> You know that the
+          <Strong>You want to Scale Easily:</Strong>{" "}You know that the
           difference between a 70% ROAS and a 150% ROAS isn&rsquo;t spending
           more&mdash;it&rsquo;s spending smarter.
         </LI>

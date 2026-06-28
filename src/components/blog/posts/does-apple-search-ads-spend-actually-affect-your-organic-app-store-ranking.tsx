@@ -19,7 +19,7 @@ export function SpendVsOrganicRankBody() {
   return (
     <>
       <P>
-        <Strong>Yes &mdash; but with a catch.</Strong> Apple&rsquo;s algorithm
+        <Strong>Yes &mdash; but with a catch.</Strong>{" "}Apple&rsquo;s algorithm
         rewards install velocity, and paid installs count the same as organic
         ones. So if you&rsquo;re outspending your competitors enough to drive
         significantly more installs on a keyword, your rank will move.

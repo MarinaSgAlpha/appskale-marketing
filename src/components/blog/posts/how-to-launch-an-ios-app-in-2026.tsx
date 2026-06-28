@@ -80,15 +80,15 @@ export function LaunchIosApp2026Body() {
       <P>During this period, Apple is measuring conversion signals:</P>
       <UL>
         <LI>
-          <Strong>Tap-to-install rate</Strong> &mdash; What percentage of
+          <Strong>Tap-to-install rate</Strong>{" "}&mdash; What percentage of
           people who see the listing actually download it?
         </LI>
         <LI>
-          <Strong>Retention</Strong> &mdash; Are users returning to the app
+          <Strong>Retention</Strong>{" "}&mdash; Are users returning to the app
           after installing?
         </LI>
         <LI>
-          <Strong>Complaint signals</Strong> &mdash; Refund requests, one-star
+          <Strong>Complaint signals</Strong>{" "}&mdash; Refund requests, one-star
           reviews, support contacts
         </LI>
       </UL>
@@ -152,7 +152,7 @@ export function LaunchIosApp2026Body() {
       </P>
       <UL>
         <LI>
-          <Strong>iGeeksBlog</Strong> &mdash; daily &ldquo;Apps Gone Free&rdquo;
+          <Strong>iGeeksBlog</Strong>{" "}&mdash; daily &ldquo;Apps Gone Free&rdquo;
           coverage, accepts developer submissions
         </LI>
         <LI>
@@ -160,29 +160,29 @@ export function LaunchIosApp2026Body() {
           audience browsing for free and discounted apps
         </LI>
         <LI>
-          <Strong>9to5Toys</Strong> &mdash; high-readership daily deal roundups
+          <Strong>9to5Toys</Strong>{" "}&mdash; high-readership daily deal roundups
         </LI>
         <LI>
-          <Strong>AppStore-Discounts.com</Strong> &mdash; free developer
+          <Strong>AppStore-Discounts.com</Strong>{" "}&mdash; free developer
           submission ahead of price drops
         </LI>
         <LI>
-          <Strong>TickGiveaway</Strong> &mdash; daily iOS giveaway promotions
+          <Strong>TickGiveaway</Strong>{" "}&mdash; daily iOS giveaway promotions
         </LI>
         <LI>
-          <Strong>MacRumors Forums</Strong> &mdash; developer section; threads
+          <Strong>MacRumors Forums</Strong>{" "}&mdash; developer section; threads
           accumulate views over weeks
         </LI>
         <LI>
-          <Strong>HackingWithSwift</Strong> &mdash; app announcement section
+          <Strong>HackingWithSwift</Strong>{" "}&mdash; app announcement section
           for the iOS developer community
         </LI>
         <LI>
-          <Strong>ProductHunt</Strong> &mdash; still relevant for apps with a
+          <Strong>ProductHunt</Strong>{" "}&mdash; still relevant for apps with a
           novel angle
         </LI>
         <LI>
-          <Strong>r/AppHookup</Strong> &mdash; active community of
+          <Strong>r/AppHookup</Strong>{" "}&mdash; active community of
           deal-seekers
         </LI>
       </UL>
@@ -233,7 +233,7 @@ export function LaunchIosApp2026Body() {
         so paid spend compounds into organic visibility.
       </P>
       <P>
-        Start with a <Strong>Search Results campaign</Strong> targeting
+        Start with a <Strong>Search Results campaign</Strong>{" "}targeting
         20&ndash;30 keywords relevant to the app&rsquo;s core use cases. The
         initial goal isn&rsquo;t profitability &mdash; it&rsquo;s data
         collection. Set a modest daily budget and let campaigns run for at
@@ -284,11 +284,11 @@ export function LaunchIosApp2026Body() {
           <Strong>Scale spend</Strong> on profitable keywords
         </LI>
         <LI>
-          <Strong>Optimize the App Store listing</Strong> around those terms
+          <Strong>Optimize the App Store listing</Strong>{" "}around those terms
           &mdash; title, subtitle, keyword field
         </LI>
         <LI>
-          <Strong>Inform the roadmap</Strong> &mdash; high-converting keyword
+          <Strong>Inform the roadmap</Strong>{" "}&mdash; high-converting keyword
           clusters reveal what the market actually cares about
         </LI>
         <LI>
@@ -318,21 +318,21 @@ export function LaunchIosApp2026Body() {
 
       <H2>The Full Timeline</H2>
       <P>
-        <Strong>Week 1</Strong> &mdash; Launch with a free offer. Monitor
+        <Strong>Week 1</Strong>{" "}&mdash; Launch with a free offer. Monitor
         conversion signals closely during the honeymoon window. Fix anything
         that generates complaints.
       </P>
       <P>
-        <Strong>Weeks 2&ndash;3</Strong> &mdash; Run the lifetime deal. Submit
+        <Strong>Weeks 2&ndash;3</Strong>{" "}&mdash; Run the lifetime deal. Submit
         to deal sites. Accumulate ratings. Pad the promotion window for
         timezone coverage.
       </P>
       <P>
-        <Strong>Weeks 3&ndash;6</Strong> &mdash; Start Apple Search Ads. Target
+        <Strong>Weeks 3&ndash;6</Strong>{" "}&mdash; Start Apple Search Ads. Target
         20&ndash;30 keywords. Let data accumulate.
       </P>
       <P>
-        <Strong>Week 6+</Strong> &mdash; Analyze keyword-level revenue.
+        <Strong>Week 6+</Strong>{" "}&mdash; Analyze keyword-level revenue.
         Identify the 3&ndash;5 money keywords. Reallocate budget. Optimize the
         listing. Scale what converts.
       </P>
