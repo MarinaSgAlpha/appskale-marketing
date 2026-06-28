@@ -62,8 +62,8 @@ export const BLOG_POSTS: BlogPost[] = [
     image: {
       src: "/images/blog/apple-search-ads-keyword-audit/cover.png",
       alt: "A four-quadrant Apple Search Ads keyword audit framework sorting keywords into kill, keep, scale, and investigate based on revenue and install volume.",
-      width: 1024,
-      height: 576,
+      width: 1536,
+      height: 1024,
     },
     author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     about: [
