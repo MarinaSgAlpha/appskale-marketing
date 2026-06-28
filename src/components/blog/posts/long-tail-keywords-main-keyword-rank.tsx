@@ -1,8 +1,18 @@
-import { A, H2, InlineCode, P } from "@/components/blog/Prose";
+import { A, H2, InlineCode, InlineImage, P } from "@/components/blog/Prose";
+
+const COVER_IMAGE =
+  "/images/blog/long-tail-keywords-main-keyword-rank/cover.png";
 
 export function LongTailKeywordsRankBody() {
   return (
     <>
+      <InlineImage
+        src={COVER_IMAGE}
+        alt="Diagram showing five long-tail App Store search variants — 'ai note taker for students', 'ai note taker for meetings', 'ai voice note taker', 'best ai note taker', 'ai note taker app' — flowing into the head keyword 'ai note taker' via shared tokens."
+        width={1024}
+        height={576}
+      />
+
       <P>
         You&rsquo;re #4 for your main keyword. You raise the bid from $1.20 to
         $1.30. CPA climbs to $1.50. Installs don&rsquo;t move.
