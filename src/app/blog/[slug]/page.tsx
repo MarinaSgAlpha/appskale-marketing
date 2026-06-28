@@ -21,10 +21,12 @@ import { CalculateRoasRevenueCatBody } from "@/components/blog/posts/how-to-calc
 import { ImproveKeywordRankings2026Body } from "@/components/blog/posts/how-to-improve-your-app-store-keyword-rankings-in-2026";
 import { LaunchIosApp2026Body } from "@/components/blog/posts/how-to-launch-an-ios-app-in-2026";
 import { ScaleCustomProductPagesBody } from "@/components/blog/posts/how-to-scale-your-app-with-custom-product-pages";
+import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keywords-main-keyword-rank";
 
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "long-tail-keywords-main-keyword-rank": LongTailKeywordsRankBody,
   "appsflyer-alternative-indie-devs": AppsFlyerAlternativeIndieDevsBody,
   "how-to-scale-your-app-with-custom-product-pages":
     ScaleCustomProductPagesBody,

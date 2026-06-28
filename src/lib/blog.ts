@@ -54,6 +54,50 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "long-tail-keywords-main-keyword-rank",
+    title:
+      "How long-tail keywords push your main keyword's App Store rank",
+    description:
+      "Your head keyword is capped and bidding higher does nothing. Here's how long-tail install velocity feeds it through Apple's token system — and the mistake that wastes the whole play.",
+    image: {
+      src: "/images/blog/long-tail-keywords-main-keyword-rank/cover.png",
+      alt: "Diagram showing five long-tail App Store search variants — 'ai note taker for students', 'ai note taker for meetings', 'ai voice note taker', 'best ai note taker', 'ai note taker app' — flowing into the head keyword 'ai note taker' via shared tokens.",
+      width: 1024,
+      height: 576,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    about: [
+      { name: "App Store Optimization" },
+      { name: "Apple Search Ads" },
+      { name: "Long-Tail Keyword Strategy" },
+      { name: "App Store Ranking Algorithm" },
+      { name: "Keyword Token Relevance" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that ties keyword bids to subscription revenue, surfacing which long-tail terms actually drive paying users.",
+      },
+    ],
+    keywords: [
+      "long-tail keywords App Store",
+      "App Store keyword token relevance",
+      "Apple Search Ads long-tail strategy",
+      "head keyword ranking ceiling",
+      "App Store install velocity",
+      "ASA keyword popularity floor",
+      "ASA conversion rate ranking factor",
+      "long-tail keyword cluster ASO",
+      "App Store ranking algorithm 2026",
+      "keyword cannibalization App Store",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "appsflyer-alternative-indie-devs",
     title:
       "AppsFlyer Alternative for Indie Devs: See which keywords actually sell",

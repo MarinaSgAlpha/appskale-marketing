@@ -183,6 +183,14 @@ export function Code({ children }: { children: ReactNode }) {
   );
 }
 
+export function InlineCode({ children }: { children: ReactNode }) {
+  return (
+    <code className="rounded bg-purple-100 px-1.5 py-0.5 font-mono text-[12.5px] text-purple-900">
+      {children}
+    </code>
+  );
+}
+
 type TableProps = {
   headers: ReactNode[];
   rows: ReactNode[][];
