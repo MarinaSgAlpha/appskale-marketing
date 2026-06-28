@@ -54,6 +54,56 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-roas-by-country",
+    title:
+      "Your Apple Search Ads ROAS Is Lying to You Until You Split It by Country",
+    description:
+      "Blended Apple Search Ads ROAS averages wildly different markets into one misleading number. Here's how to split ROAS by country, read the tiers, and use localization to lower CPI and lift ROI.",
+    image: {
+      src: "/images/blog/apple-search-ads-roas-by-country/cover.png",
+      alt: "A single blended Apple Search Ads ROAS figure splitting into separate per-country ROAS values, some profitable and some losing money.",
+      width: 1536,
+      height: 1024,
+    },
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "ROAS by Country" },
+      { name: "App Store Localization" },
+      { name: "Subscription Revenue Attribution" },
+      { name: "International App Growth" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows ROAS by country and by keyword within each country, tied to RevenueCat subscription revenue.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "Apple Search Ads ROAS by country",
+      "ASA country level ROAS",
+      "blended ROAS misleading",
+      "Apple Search Ads localization",
+      "reduce CPT with localization",
+      "App Store LTV by country",
+      "cheap install trap",
+      "ASA geo bidding strategy",
+      "purchasing power parity app pricing",
+      "international Apple Search Ads strategy",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-keyword-audit",
     title:
       "The 30-Day Keyword Audit: Which Keywords to Kill, Keep, and Scale",

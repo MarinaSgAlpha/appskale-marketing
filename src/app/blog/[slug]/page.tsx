@@ -16,6 +16,7 @@ import {
 import { SITE, URLS } from "@/lib/site";
 import { AdaptyVsAppSkaleBody } from "@/components/blog/posts/adapty-vs-appskale";
 import { KeywordAudit30DayBody } from "@/components/blog/posts/apple-search-ads-keyword-audit";
+import { RoasByCountryBody } from "@/components/blog/posts/apple-search-ads-roas-by-country";
 import { AppsFlyerAlternativeIndieDevsBody } from "@/components/blog/posts/appsflyer-alternative-indie-devs";
 import { SpendVsOrganicRankBody } from "@/components/blog/posts/does-apple-search-ads-spend-actually-affect-your-organic-app-store-ranking";
 import { CalculateRoasRevenueCatBody } from "@/components/blog/posts/how-to-calculate-apple-search-ads-roas-with-revenuecat";
@@ -27,6 +28,7 @@ import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keyw
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "apple-search-ads-roas-by-country": RoasByCountryBody,
   "apple-search-ads-keyword-audit": KeywordAudit30DayBody,
   "long-tail-keywords-main-keyword-rank": LongTailKeywordsRankBody,
   "appsflyer-alternative-indie-devs": AppsFlyerAlternativeIndieDevsBody,
