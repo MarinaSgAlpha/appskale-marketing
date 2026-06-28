@@ -55,7 +55,7 @@ export function Footer() {
               llms.txt
             </Link>
             <p className="mt-2 text-xs text-purple-700/70">
-              © 2025. All rights reserved.
+              © 2026. All rights reserved.
             </p>
           </div>
         </div>

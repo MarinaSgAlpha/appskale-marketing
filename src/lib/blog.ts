@@ -65,6 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
       width: 1536,
       height: 1024,
     },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     about: [
       { name: "Apple Search Ads" },
       { name: "ROAS by Country" },
@@ -115,6 +116,7 @@ export const BLOG_POSTS: BlogPost[] = [
       width: 1536,
       height: 1024,
     },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     about: [
       { name: "Apple Search Ads" },
       { name: "Keyword Audit" },
