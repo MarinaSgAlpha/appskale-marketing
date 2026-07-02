@@ -54,6 +54,86 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "seo-for-apps-beginners-guide",
+    title: "SEO for Apps: A Beginner's Guide (It's Actually Called ASO)",
+    description:
+      "You searched SEO for apps and got web advice. The real term is ASO. Here's how App Store ranking works, why new apps stall, and where Apple Search Ads fits.",
+    image: {
+      src: "/images/blog/seo-for-apps-beginners-guide/cover.png",
+      alt: "Diagram comparing web SEO levers with App Store ASO levers for mobile apps",
+      width: 1536,
+      height: 1024,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Is SEO for apps the same as ASO?",
+        answer:
+          "Not exactly. People search 'SEO for apps' when they mean App Store Optimization (ASO): getting your app found in App Store search. Web SEO targets Google rankings for websites. Same broad goal (search visibility), different platforms and levers.",
+      },
+      {
+        question: "What is ASO for iOS apps?",
+        answer:
+          "ASO (App Store Optimization) is the practice of improving your app's visibility in App Store search. The main levers are app name, subtitle, keywords field, screenshots, ratings, and download velocity.",
+      },
+      {
+        question: "Why do new apps struggle to rank in the App Store?",
+        answer:
+          "App Store search rewards download velocity. New apps with few installs send a weak ranking signal, which means fewer impressions and fewer organic downloads. Metadata alone rarely breaks this cold-start loop without a way to seed installs.",
+      },
+      {
+        question: "How do Apple Search Ads help with ASO?",
+        answer:
+          "Apple Search Ads puts your app at the top of App Store search results for specific keywords. Paid installs tied to a search term can help seed download velocity for that term while you learn which keywords actually convert to paying users.",
+      },
+    ],
+    about: [
+      { name: "App Store Optimization" },
+      { name: "SEO for Apps" },
+      { name: "Apple Search Ads" },
+      { name: "iOS App Marketing" },
+      { name: "Download Velocity" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that connects keyword-level spend to RevenueCat subscription revenue.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "App Store Connect",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Web",
+        description:
+          "Apple's platform for managing app metadata, pricing, and distribution on the App Store.",
+      },
+    ],
+    keywords: [
+      "SEO for apps",
+      "ASO for beginners",
+      "App Store Optimization guide",
+      "SEO vs ASO",
+      "how to rank app in App Store",
+      "Apple Search Ads for indie devs",
+      "App Store download velocity",
+      "keyword field iOS ASO",
+      "revenue per keyword Apple Search Ads",
+      "App Store cold start problem",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "how-to-track-apple-search-ads-conversions-complete-2026-guide",
     title:
       "How to Track Apple Search Ads Conversions in 2026 (Revenue Guide)",
