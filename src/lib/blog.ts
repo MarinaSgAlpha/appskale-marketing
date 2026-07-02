@@ -62,8 +62,8 @@ export const BLOG_POSTS: BlogPost[] = [
     image: {
       src: "/images/blog/how-to-track-apple-search-ads-conversions-complete-2026-guide/cover.png",
       alt: "AppSkale Apple Search Ads analytics dashboard showing keyword-level revenue and ROAS",
-      width: 2872,
-      height: 1452,
+      width: 1024,
+      height: 533,
     },
     author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     faq: [

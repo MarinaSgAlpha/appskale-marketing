@@ -152,9 +152,9 @@ export function TrackAppleSearchAdsConversions2026Body() {
       </Blockquote>
       <InlineImage
         src={CAMPAIGN_TRACKER_IMAGE}
-        alt="AppSkale campaign-level Apple Search Ads conversion tracker showing spend and revenue side by side"
-        width={2876}
-        height={1296}
+        alt="AppSkale keyword dashboard showing spend, ad revenue, and ROAS summary metrics"
+        width={1024}
+        height={746}
         caption="Apple Search Ads Conversion Tracker"
       />
       <P>
@@ -185,8 +185,8 @@ export function TrackAppleSearchAdsConversions2026Body() {
       <InlineImage
         src={KEYWORD_ANALYTICS_IMAGE}
         alt="AppSkale keyword-level Apple Search Ads analytics showing revenue and ROAS per keyword"
-        width={2872}
-        height={1452}
+        width={1024}
+        height={533}
         caption="AppSkale – Apple Search Ads Analytics"
       />
 
