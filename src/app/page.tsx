@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Apple Search Ads analytics & keyword ROAS",
   description:
     "The Apple Search Ads analytics platform to track conversions and ROAS. AppSkale provides keyword-level LTV and revenue data, so you see which campaigns drive real subscriptions—not just installs.",
+  verification: {
+    google: "QOn0T33XujIhb9VPPTmAYUpQ-zALQWMG5a6O3WK2264",
+  },
 };
 
 export default function Home() {
