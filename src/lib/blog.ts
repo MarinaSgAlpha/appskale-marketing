@@ -54,6 +54,86 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-for-beginners",
+    title: "Apple Search Ads for Beginners: Should You Actually Run Them?",
+    description:
+      "Apple Search Ads sounds like an easy install shortcut. It is not always the right move. Here is who should run ASA, what it costs, and when to wait.",
+    image: {
+      src: "/images/blog/apple-search-ads-for-beginners/cover.png",
+      alt: "Apple Search Ads beginner guide showing paid App Store search placement and keyword bidding basics",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Is Apple Search Ads worth it for indie apps?",
+        answer:
+          "It can be, if your app monetizes, converts installs reasonably well, and you can measure revenue per keyword. It is usually not worth it yet if you have zero paying users, weak ratings, or no revenue tracking set up.",
+      },
+      {
+        question: "How much does Apple Search Ads cost for beginners?",
+        answer:
+          "Cost per tap often falls roughly in the $0.30–$2.00 range for many subscription app keywords, with cost per install often around $2–$8 in indie categories. A realistic learning budget is about $300–$600 over four to six weeks in one storefront.",
+      },
+      {
+        question: "Should I run Apple Search Ads or focus on ASO first?",
+        answer:
+          "Do the free ASO basics first: app name, subtitle, keywords field, and screenshots. Apple Search Ads can then seed download velocity and help you learn faster, but ASA works best when your listing converts and you can track revenue after the install.",
+      },
+      {
+        question: "What is the minimum Apple Search Ads budget to learn?",
+        answer:
+          "Many solo developers need at least a few hundred dollars over four to six weeks to get enough keyword-level signal. Spending below about $10/day often produces too little data to make clear decisions.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "App Store Optimization" },
+      { name: "iOS App Marketing" },
+      { name: "Subscription Revenue Attribution" },
+      { name: "Keyword-Level ROAS" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that connects keyword-level spend to RevenueCat subscription revenue.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "App Store Connect",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Web",
+        description:
+          "Apple's platform for managing app metadata, pricing, and distribution on the App Store.",
+      },
+    ],
+    keywords: [
+      "is apple search ads worth it",
+      "apple search ads for beginners",
+      "apple search ads cost",
+      "should i run apple search ads",
+      "apple search ads vs aso",
+      "minimum apple search ads budget",
+      "apple search ads indie developers",
+      "when to start apple search ads",
+      "apple search ads cost per install",
+      "revenue per keyword apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "seo-for-apps-beginners-guide",
     title: "SEO for Apps: A Beginner's Guide (It's Actually Called ASO)",
     description:
