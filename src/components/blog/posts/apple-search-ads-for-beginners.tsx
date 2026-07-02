@@ -67,20 +67,20 @@ export function AppleSearchAdsForBeginnersBody() {
       </P>
       <UL>
         <LI>
-          <Strong>You monetize.</Strong> Subscription, in-app purchase, or paid
+          <Strong>You monetize.</Strong>{" "}Subscription, in-app purchase, or paid
           app. Free apps with no revenue path can run ASA, but the playbook is
           different and the learning loop is harder. If you cannot point to
           where money comes from after an install, you will optimize blind.
         </LI>
         <LI>
           <Strong>Your app converts installs into activation or paid at a
-          reasonable rate.</Strong> You do not need perfect numbers. You should
+          reasonable rate.</Strong>{" "}You do not need perfect numbers. You should
           already know from organic downloads whether people open the app, start
           a trial, or buy something. If organic users bounce immediately, paid
           users will too.
         </LI>
         <LI>
-          <Strong>You have retention data or solid ratings.</Strong> Roughly
+          <Strong>You have retention data or solid ratings.</Strong>{" "}Roughly
           thirty days of retention numbers, or ratings above about 4.0. Buying
           installs into a leaky bucket burns cash fast. Bad reviews kill your
           tap-to-install rate before you ever get a chance to learn on keywords.
@@ -98,27 +98,27 @@ export function AppleSearchAdsForBeginnersBody() {
       </P>
       <UL>
         <LI>
-          <Strong>Zero paying users so far.</Strong> Fix conversion before you
+          <Strong>Zero paying users so far.</Strong>{" "}Fix conversion before you
           buy traffic. Paid installs into a broken funnel just accelerate the
           loss.
         </LI>
         <LI>
-          <Strong>No RevenueCat or equivalent revenue tracking.</Strong> If you
+          <Strong>No RevenueCat or equivalent revenue tracking.</Strong>{" "}If you
           cannot tie an install back to a subscription or purchase, you cannot
           know whether ASA is working.
         </LI>
         <LI>
-          <Strong>App is under 3.5 stars.</Strong> Low ratings crush
+          <Strong>App is under 3.5 stars.</Strong>{" "}Low ratings crush
           tap-to-install. You pay for taps that never convert because the listing
           looks risky.
         </LI>
         <LI>
           <Strong>You are not ready to spend a few hundred dollars over four to
-          six weeks.</Strong> ASA needs runway to produce signal. Below that,
+          six weeks.</Strong>{" "}ASA needs runway to produce signal. Below that,
           you are mostly guessing.
         </LI>
         <LI>
-          <Strong>You have not done the free ASO work yet.</Strong> App name,
+          <Strong>You have not done the free ASO work yet.</Strong>{" "}App name,
           subtitle, keywords field, screenshots. Defend your own app name
           organically before you pay to defend it.
         </LI>
@@ -137,19 +137,19 @@ export function AppleSearchAdsForBeginnersBody() {
       </P>
       <UL>
         <LI>
-          <Strong>Cost per tap:</Strong> roughly $0.30&ndash;$2.00 in most
+          <Strong>Cost per tap:</Strong>{" "}roughly $0.30&ndash;$2.00 in most
           subscription app categories, depending on keyword competitiveness
         </LI>
         <LI>
-          <Strong>Cost per install:</Strong> often $2&ndash;$8 for indie
+          <Strong>Cost per install:</Strong>{" "}often $2&ndash;$8 for indie
           categories, higher for finance, dating, and health
         </LI>
         <LI>
-          <Strong>Minimum viable learning budget:</Strong> about $300&ndash;$600
+          <Strong>Minimum viable learning budget:</Strong>{" "}about $300&ndash;$600
           over four to six weeks in one storefront, usually the US first
         </LI>
         <LI>
-          <Strong>Below $10/day</Strong> you get so little data that you cannot
+          <Strong>Below $10/day</Strong>{" "}you get so little data that you cannot
           make decisions with confidence
         </LI>
       </UL>
@@ -173,7 +173,7 @@ export function AppleSearchAdsForBeginnersBody() {
       </P>
       <UL>
         <LI>
-          <Strong>Bidding on category terms too early.</Strong> Huge volume,
+          <Strong>Bidding on category terms too early.</Strong>{" "}Huge volume,
           expensive, generic intent, low conversion. &ldquo;Fitness app&rdquo;
           sounds right until you realize everyone tapping it is browsing, not
           buying. Fix: start with your own app name and five to ten tight
@@ -186,7 +186,7 @@ export function AppleSearchAdsForBeginnersBody() {
           do not raise budgets.
         </LI>
         <LI>
-          <Strong>Turning it all on at once.</Strong> One giant campaign, dozens
+          <Strong>Turning it all on at once.</Strong>{" "}One giant campaign, dozens
           of keywords, Discovery mode enabled, multiple countries. You spend
           money everywhere and learn nothing. Fix: one storefront, one campaign,
           one match type, small keyword list, review weekly.
