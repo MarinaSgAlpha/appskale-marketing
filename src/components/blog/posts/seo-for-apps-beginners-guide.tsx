@@ -16,13 +16,6 @@ const COVER_IMAGE =
 export function SeoForAppsBeginnersGuideBody() {
   return (
     <>
-      <InlineImage
-        src={COVER_IMAGE}
-        alt="Diagram comparing web SEO levers with App Store ASO levers for mobile apps"
-        width={1024}
-        height={682}
-      />
-
       <P>
         You searched &ldquo;SEO for apps&rdquo; and got a wall of web SEO advice.
         Blog posts about Google rankings. Backlink strategies. Meta descriptions.
@@ -43,6 +36,12 @@ export function SeoForAppsBeginnersGuideBody() {
       </P>
 
       <H2>SEO vs ASO: what&rsquo;s actually different</H2>
+      <InlineImage
+        src={COVER_IMAGE}
+        alt="Diagram comparing web SEO levers with App Store ASO levers for mobile apps"
+        width={1024}
+        height={682}
+      />
       <P>
         Web SEO ranks pages on Google. ASO ranks apps inside the App Store search
         box. Users type a query, Apple returns a list, your app either shows up
@@ -67,26 +66,26 @@ export function SeoForAppsBeginnersGuideBody() {
           &mdash; your strongest keyword real estate on iOS
         </LI>
         <LI>
-          <Strong>Keywords field</Strong> (iOS only, 100 characters,
-          comma-separated, no spaces) &mdash; hidden from users, indexed by
+          <Strong>Keywords field</Strong>{" "}(iOS only, 100 characters,
+          comma-separated, no spaces){" "}&mdash; hidden from users, indexed by
           Apple
         </LI>
         <LI>
-          <Strong>Long description</Strong> (Android / Google Play) &mdash;
+          <Strong>Long description</Strong>{" "}(Android / Google Play){" "}&mdash;
           indexed on Google Play; on iOS the description is mostly for humans,
           not the search algorithm
         </LI>
         <LI>
-          <Strong>Screenshots and preview video</Strong> &mdash; not
+          <Strong>Screenshots and preview video</Strong>{" "}&mdash; not
           &ldquo;keywords&rdquo; exactly, but they drive tap-through and
           installs, which feeds ranking
         </LI>
         <LI>
-          <Strong>Ratings and reviews</Strong> &mdash; social proof that affects
+          <Strong>Ratings and reviews</Strong>{" "}&mdash; social proof that affects
           conversion once someone finds you
         </LI>
         <LI>
-          <Strong>Download velocity</Strong> &mdash; how fast installs are
+          <Strong>Download velocity</Strong>{" "}&mdash; how fast installs are
           coming in relative to competitors for a given search term
         </LI>
       </UL>
