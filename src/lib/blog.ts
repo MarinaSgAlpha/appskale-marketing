@@ -54,6 +54,91 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-to-track-apple-search-ads-conversions-complete-2026-guide",
+    title:
+      "How to Track Apple Search Ads Conversions in 2026 (Revenue Guide)",
+    description:
+      "Learn how to track Apple Search Ads conversions from install to revenue, fix the keyword profitability blind spot, and connect campaign spend to real subscription ROAS.",
+    image: {
+      src: "/images/blog/how-to-track-apple-search-ads-conversions-complete-2026-guide/cover.png",
+      alt: "AppSkale Apple Search Ads analytics dashboard showing keyword-level revenue and ROAS",
+      width: 2872,
+      height: 1452,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Does Apple Search Ads (ASA) attribution still work without ATT permission?",
+        answer:
+          "Yes. Unlike Facebook or Google Ads, ASA attribution via the AdServices framework does not require User Tracking Transparency (ATT) consent. Because the attribution happens within Apple's own first-party ecosystem, you can still track keyword-level installs for users who have opted out of tracking, though the payload may contain less granular timestamp data.",
+      },
+      {
+        question:
+          "Why can't I see keyword-level revenue in the Apple Search Ads dashboard?",
+        answer:
+          "The native Apple Search Ads dashboard is built to track top-of-funnel metrics like impressions, taps, and installs. It does not have access to your post-install purchase data. To see ROAS and revenue per keyword, you must use a tool like AppSkale to bridge the gap between Apple's attribution API and your revenue source (like RevenueCat or App Store Connect).",
+      },
+      {
+        question:
+          "Can I track Apple Search Ads conversions without a traditional MMP?",
+        answer:
+          "Yes. While traditional MMPs like AppsFlyer are common, they can be expensive for solo developers. You can use the Apple AdServices API to retrieve an attribution token in your app, send it to your backend, and link it to your purchase events. AppSkale simplifies this process by providing a lightweight way to see these metrics without the complexity of a full-scale MMP.",
+      },
+      {
+        question:
+          "How do I know which Apple Search Ads keywords are worth scaling?",
+        answer:
+          "You should not scale based on Cost Per Acquisition (CPA) alone. A keyword might have a low CPA but a 0% conversion rate to paid subscriptions. The only way to scale effectively is to track Keyword ARPU (Average Revenue Per User). Focus your budget on keywords that drive Trial Starts and Purchases, even if their initial tap-to-install cost is slightly higher.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Conversion Tracking" },
+      { name: "App Store Attribution" },
+      { name: "Subscription Revenue Attribution" },
+      { name: "Keyword-Level ROAS" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics and conversion tracking tool that connects campaign and keyword spend to subscription revenue.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "AppsFlyer",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android",
+        description:
+          "A mobile measurement partner (MMP) for app attribution and analytics.",
+      },
+    ],
+    keywords: [
+      "track Apple Search Ads conversions",
+      "Apple Search Ads conversion tracking 2026",
+      "ASA keyword revenue tracking",
+      "Apple Search Ads ROAS by keyword",
+      "keyword profitability blind spot",
+      "Apple Search Ads attribution without ATT",
+      "AdServices framework attribution",
+      "Apple Search Ads conversion tracker",
+      "keyword level Apple Search Ads analytics",
+      "RevenueCat Apple Search Ads integration",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-roas-by-country",
     title:
       "Your Apple Search Ads ROAS Is Lying to You Until You Split It by Country",
