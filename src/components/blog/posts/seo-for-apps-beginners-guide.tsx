@@ -19,8 +19,8 @@ export function SeoForAppsBeginnersGuideBody() {
       <InlineImage
         src={COVER_IMAGE}
         alt="Diagram comparing web SEO levers with App Store ASO levers for mobile apps"
-        width={1536}
-        height={1024}
+        width={1024}
+        height={682}
       />
 
       <P>

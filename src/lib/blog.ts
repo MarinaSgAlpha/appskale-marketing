@@ -61,8 +61,8 @@ export const BLOG_POSTS: BlogPost[] = [
     image: {
       src: "/images/blog/seo-for-apps-beginners-guide/cover.png",
       alt: "Diagram comparing web SEO levers with App Store ASO levers for mobile apps",
-      width: 1536,
-      height: 1024,
+      width: 1024,
+      height: 682,
     },
     author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     faq: [
