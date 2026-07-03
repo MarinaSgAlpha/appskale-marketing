@@ -43,7 +43,7 @@ export function SearchMatchEatingYourBudgetBody() {
         src={COVER_IMAGE}
         alt="Diagram showing Apple Search Ads Search Match expanding bids beyond chosen keywords into unrelated App Store searches"
         width={1024}
-        height={682}
+        height={681}
       />
       <P>
         Search Match is an Apple Search Ads setting that lets Apple bid on

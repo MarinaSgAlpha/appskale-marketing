@@ -62,7 +62,7 @@ export const BLOG_POSTS: BlogPost[] = [
       src: "/images/blog/search-match-eating-your-budget/cover.png",
       alt: "Diagram showing Apple Search Ads Search Match expanding bids beyond chosen keywords into unrelated App Store searches",
       width: 1024,
-      height: 682,
+      height: 681,
     },
     author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
     faq: [
