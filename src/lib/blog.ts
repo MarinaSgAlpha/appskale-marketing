@@ -54,6 +54,78 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "search-match-eating-your-budget",
+    title: "Search Match Is Eating Your Budget: When to Turn It Off",
+    description:
+      "Apple Search Ads Search Match is on by default and often burns budget on irrelevant taps. Here is what it does, when to keep it, and what to run instead.",
+    image: {
+      src: "/images/blog/search-match-eating-your-budget/cover.png",
+      alt: "Diagram showing Apple Search Ads Search Match expanding bids beyond chosen keywords into unrelated App Store searches",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is Search Match in Apple Search Ads?",
+        answer:
+          "Search Match is an Apple Search Ads setting that lets Apple bid on App Store search terms beyond the keywords you manually added. Apple uses your app metadata and other signals to match your ad to searches it considers relevant.",
+      },
+      {
+        question: "Should I turn off Search Match in Apple Search Ads?",
+        answer:
+          "Many indie developers should turn Search Match off during their first learning phase, especially on a budget under about $500. Exact match on a small, intentional keyword list usually produces cleaner signal than broad auto-matching.",
+      },
+      {
+        question: "Why is Search Match spending my Apple Search Ads budget?",
+        answer:
+          "Search Match expands your campaign to additional search queries Apple selects automatically. That often increases tap volume on terms you did not choose, including broad or low-intent searches that drive installs but little revenue.",
+      },
+      {
+        question: "What should I use instead of Search Match?",
+        answer:
+          "Start with Exact match ad groups: one for brand defense on your app name, and one for ten to fifteen long-tail category keywords. Add a separate discovery ad group with Search Match later only if you can track revenue per keyword.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Search Match" },
+      { name: "Keyword Bidding Strategy" },
+      { name: "Exact Match Campaigns" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads search match",
+      "turn off search match",
+      "search match eating budget",
+      "apple search ads exact match",
+      "asa search match vs exact match",
+      "apple search ads irrelevant keywords",
+      "search match discovery campaign",
+      "apple search ads beginner mistakes",
+      "keyword level revenue apple search ads",
+      "asa budget waste",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-for-beginners",
     title: "Apple Search Ads for Beginners: Should You Actually Run Them?",
     description:
