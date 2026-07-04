@@ -10,9 +10,9 @@ import {
 } from "@/components/blog/Prose";
 
 const COVER_IMAGE =
-  "/images/blog/brand-keywords-vs-category-keywords/cover.png";
+  "/images/blog/brand-vs-category-keywords-first-500/cover.png";
 
-export function BrandKeywordsVsCategoryKeywordsBody() {
+export function BrandVsCategoryKeywordsFirst500Body() {
   return (
     <>
       <P>
@@ -43,9 +43,10 @@ export function BrandKeywordsVsCategoryKeywordsBody() {
         height={682}
       />
       <P>
-        Brand keywords are searches for your app by name. &ldquo;Supernotes,&rdquo;
-        &ldquo;Supernotes app,&rdquo; close misspellings. Someone already knows
-        your product and typed it into the App Store search box.
+        Brand keywords are searches for your app by name. &ldquo;your app
+        name,&rdquo; &ldquo;your app name app,&rdquo; close misspellings.
+        Someone already knows your product and typed it into the App Store
+        search box.
       </P>
       <P>
         Bid on your brand first for three reasons:
@@ -104,15 +105,8 @@ export function BrandKeywordsVsCategoryKeywordsBody() {
         tighter intent. &ldquo;Voice memo for lectures&rdquo; instead of
         &ldquo;recorder app.&rdquo; &ldquo;Couples budget app&rdquo; instead of
         &ldquo;finance.&rdquo; You learn faster because each term maps to a
-        specific user problem your app solves.
-      </P>
-      <P>
-        This connects directly to{" "}
-        <A href="/blog/long-tail-keywords-main-keyword-rank">
-          how long-tail keywords push your main keyword rank
-        </A>
-        : narrow terms feed broader ranking over time, but only if you pick terms
-        that actually convert.
+        specific user problem your app solves. Narrow terms can feed broader
+        ranking over time, but only if you pick terms that actually convert.
       </P>
 
       <H2>Why head terms are a trap before you have revenue data</H2>
@@ -181,8 +175,8 @@ export function BrandKeywordsVsCategoryKeywordsBody() {
         No head terms until the long-tail list shows you which intent converts.
       </P>
       <P>
-        Example split for a note-taking app: brand on &ldquo;Supernotes&rdquo;
-        and &ldquo;Supernotes app.&rdquo; Category on &ldquo;voice memo for
+        Example split for a note-taking app: brand on &ldquo;your app name&rdquo;
+        and &ldquo;your app name app.&rdquo; Category on &ldquo;voice memo for
         lectures,&rdquo; &ldquo;meeting notes app,&rdquo; &ldquo;audio note
         taker,&rdquo; not on &ldquo;notes app&rdquo; or &ldquo;productivity.&rdquo;
         The specific phrases cost less and tell you more.
@@ -232,12 +226,9 @@ export function BrandKeywordsVsCategoryKeywordsBody() {
         of noise.
       </P>
       <P>
-        After four to six weeks, run a{" "}
-        <A href="/blog/apple-search-ads-keyword-audit">
-          30-day keyword audit
-        </A>{" "}
-        to sort winners from losers. For the ROAS math behind the revenue
-        check, see{" "}
+        After four to six weeks, pause keywords that spend without revenue and
+        put more budget on the terms that produce trials or purchases. For the
+        ROAS math behind the revenue check, see{" "}
         <A href="/blog/how-to-calculate-apple-search-ads-roas-with-revenuecat">
           how to calculate Apple Search Ads ROAS with RevenueCat
         </A>

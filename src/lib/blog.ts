@@ -54,13 +54,13 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "brand-keywords-vs-category-keywords",
+    slug: "brand-vs-category-keywords-first-500",
     title:
       "Brand Keywords vs Category Keywords: Where Your First $500 Should Go",
     description:
       "Your first Apple Search Ads budget should defend your brand name first, then test long-tail category keywords. Here is why head terms burn cash before you have revenue data.",
     image: {
-      src: "/images/blog/brand-keywords-vs-category-keywords/cover.png",
+      src: "/images/blog/brand-vs-category-keywords-first-500/cover.png",
       alt: "Diagram showing Apple Search Ads budget split between brand defense keywords and long-tail category keywords",
       width: 1024,
       height: 682,

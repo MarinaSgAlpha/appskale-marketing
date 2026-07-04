@@ -4,6 +4,8 @@ import type { NextRequest } from "next/server";
 const PATH_REDIRECTS: Record<string, string> = {
   "/blog/apple-search-ads-roas-revenuecat":
     "/blog/how-to-calculate-apple-search-ads-roas-with-revenuecat",
+  "/blog/brand-keywords-vs-category-keywords":
+    "/blog/brand-vs-category-keywords-first-500",
 };
 
 export function proxy(request: NextRequest) {
