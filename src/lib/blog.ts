@@ -54,6 +54,83 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "brand-keywords-vs-category-keywords",
+    title:
+      "Brand Keywords vs Category Keywords: Where Your First $500 Should Go",
+    description:
+      "Your first Apple Search Ads budget should defend your brand name first, then test long-tail category keywords. Here is why head terms burn cash before you have revenue data.",
+    image: {
+      src: "/images/blog/brand-keywords-vs-category-keywords/cover.png",
+      alt: "Diagram showing Apple Search Ads budget split between brand defense keywords and long-tail category keywords",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Should I bid on my own app name in Apple Search Ads?",
+        answer:
+          "Yes. Brand defense is usually the cheapest, highest-intent place to start. Bidding on your app name protects against competitors and captures users who already searched for you specifically.",
+      },
+      {
+        question:
+          "What is the difference between brand and category keywords in ASA?",
+        answer:
+          "Brand keywords are searches for your app by name. Category keywords describe what your app does without naming it, such as 'habit tracker for ADHD' or 'couples budget app'.",
+      },
+      {
+        question:
+          "Why avoid head category keywords in Apple Search Ads at first?",
+        answer:
+          "Short, high-volume category terms like 'notes app' or 'meditation' are expensive, competitive, and often have generic intent. Beginners burn budget on installs that never convert before they have keyword-level revenue data.",
+      },
+      {
+        question:
+          "How should I split my first $500 Apple Search Ads budget?",
+        answer:
+          "A common approach for indie developers is roughly $50–$100 on brand Exact match keywords and $400–$450 on ten to fifteen long-tail category Exact match keywords in one storefront, over four to six weeks.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Brand Keyword Bidding" },
+      { name: "Category Keywords" },
+      { name: "Long-Tail Keyword Strategy" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads brand keywords",
+      "category keywords apple search ads",
+      "brand vs category keywords ASA",
+      "first apple search ads budget",
+      "apple search ads $500 budget",
+      "long tail keywords apple search ads",
+      "head keywords apple search ads trap",
+      "brand defense apple search ads",
+      "apple search ads keyword strategy beginners",
+      "revenue per keyword apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "search-match-eating-your-budget",
     title: "Search Match Is Eating Your Budget: When to Turn It Off",
     description:
