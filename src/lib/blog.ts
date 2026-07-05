@@ -54,6 +54,82 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "trial-started-roas-didnt-move",
+    title: "Your Trial Started. Your ROAS Didn't Move. Now What?",
+    description:
+      "Apple Search Ads installs and trials look fine but ROAS stays flat. Here is why subscription revenue lags spend, what to watch during the wait, and when to pause.",
+    image: {
+      src: "/images/blog/trial-started-roas-didnt-move/cover.png",
+      alt: "Timeline diagram showing Apple Search Ads spend happening immediately while subscription revenue from trials arrives days or weeks later",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Why is my Apple Search Ads ROAS zero even though trials are starting?",
+        answer:
+          "Subscription ROAS often lags because you pay for taps immediately but trial users convert to paid only after their trial ends. Until enough cohorts complete that window, revenue stays near zero while spend accumulates.",
+      },
+      {
+        question:
+          "How long should I wait before judging Apple Search Ads ROAS?",
+        answer:
+          "Wait at least one full trial cycle plus a short buffer before making scale decisions. For a seven-day trial that often means two to three weeks minimum; for a thirty-day trial, six weeks or more.",
+      },
+      {
+        question:
+          "Should I pause Apple Search Ads if ROAS is flat after two weeks?",
+        answer:
+          "Not automatically. If trials are starting and you are still inside the conversion window, waiting is reasonable. Pause keywords with meaningful spend and installs but zero trial starts, or terms that remain clearly unprofitable after a full trial cycle.",
+      },
+      {
+        question:
+          "What should I track before ROAS is meaningful for a trial app?",
+        answer:
+          "Track trial start rate by keyword, brand vs category performance, and spend on terms with zero engagement. These leading indicators help you cut waste without killing keywords that need time to convert.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Return on Ad Spend" },
+      { name: "Free Trial Conversion" },
+      { name: "Subscription Revenue Attribution" },
+      { name: "Keyword-Level Analytics" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads roas flat",
+      "trial app apple search ads",
+      "asa roas lag subscription",
+      "apple search ads trial conversion",
+      "when to pause apple search ads",
+      "roas zero apple search ads",
+      "subscription app asa metrics",
+      "trial start rate by keyword",
+      "apple search ads revenue delay",
+      "revenue per keyword apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "brand-vs-category-keywords-first-500",
     title:
       "Brand Keywords vs Category Keywords: Where Your First $500 Should Go",

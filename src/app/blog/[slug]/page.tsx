@@ -19,6 +19,7 @@ import { KeywordAudit30DayBody } from "@/components/blog/posts/apple-search-ads-
 import { RoasByCountryBody } from "@/components/blog/posts/apple-search-ads-roas-by-country";
 import { AppsFlyerAlternativeIndieDevsBody } from "@/components/blog/posts/appsflyer-alternative-indie-devs";
 import { SpendVsOrganicRankBody } from "@/components/blog/posts/does-apple-search-ads-spend-actually-affect-your-organic-app-store-ranking";
+import { TrialStartedRoasDidntMoveBody } from "@/components/blog/posts/trial-started-roas-didnt-move";
 import { BrandVsCategoryKeywordsFirst500Body } from "@/components/blog/posts/brand-vs-category-keywords-first-500";
 import { SearchMatchEatingYourBudgetBody } from "@/components/blog/posts/search-match-eating-your-budget";
 import { AppleSearchAdsForBeginnersBody } from "@/components/blog/posts/apple-search-ads-for-beginners";
@@ -33,6 +34,7 @@ import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keyw
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "trial-started-roas-didnt-move": TrialStartedRoasDidntMoveBody,
   "brand-vs-category-keywords-first-500": BrandVsCategoryKeywordsFirst500Body,
   "search-match-eating-your-budget": SearchMatchEatingYourBudgetBody,
   "apple-search-ads-for-beginners": AppleSearchAdsForBeginnersBody,
