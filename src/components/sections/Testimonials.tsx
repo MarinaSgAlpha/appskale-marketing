@@ -4,27 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
 import { RadialGlow } from "@/components/ui/RadialGlow";
-
-type Testimonial = {
-  quote: string;
-  author: string;
-  role?: string;
-  avatarSrc?: string;
-  avatarAlt?: string;
-  stars?: number;
-};
-
-const testimonials: Testimonial[] = [
-  {
-    quote:
-      "I was one of the early adapters of Appskale. The set up was time consuming and tricky but I needed that to work because I needed to optimize my budget and my ads campaigns. At the beginning, I encountered some bugs and I reported them but they addressed those pretty quickly. Now I am able to see which keywords are working and which aren't. So it is pretty useful for us.",
-    author: "Mike",
-    role: "CEO of RapidNova.co",
-    avatarSrc: "/images/testimonials/testimonial_logo.webp",
-    avatarAlt: "RapidNova logo",
-    stars: 5,
-  },
-];
+import { TESTIMONIALS } from "@/data/testimonials";
 
 function Star({ filled }: { filled: boolean }) {
   return (
@@ -81,7 +61,7 @@ export function Testimonials() {
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl">
-          {testimonials.map((t) => (
+          {TESTIMONIALS.map((t) => (
             <Card
               key={t.author}
               variant="solid"

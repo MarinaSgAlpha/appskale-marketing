@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { FeatureRow } from "@/components/sections/FeatureRow";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
 import { URLS } from "@/lib/site";
@@ -76,7 +75,6 @@ export default function Home() {
         cta={{ label: "Get Started Free", href: URLS.signup }}
       />
 
-      <Testimonials />
       <HowItWorks />
       <FAQ />
     </>
