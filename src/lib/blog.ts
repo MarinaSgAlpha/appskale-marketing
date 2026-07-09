@@ -54,6 +54,90 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-vs-facebook-ads-ios-2026",
+    title: "Apple Search Ads vs Facebook Ads for iOS Apps in 2026",
+    description:
+      "Apple Search Ads and Facebook Ads are not interchangeable for iOS apps. Here is when each wins after ATT, and how to choose your first paid channel.",
+    image: {
+      src: "/images/blog/apple-search-ads-vs-facebook-ads-ios-2026/cover.png",
+      alt: "Comparison diagram of Apple Search Ads high-intent App Store search versus Facebook Ads feed discovery for iOS apps",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Should I run Apple Search Ads or Facebook Ads first for my iOS app?",
+        answer:
+          "If people already search for your category in the App Store and you can track subscription revenue, Apple Search Ads is usually the cleaner first test. Choose Facebook Ads first when search demand is thin and your growth depends on creative-led discovery.",
+      },
+      {
+        question:
+          "Is Apple Search Ads cheaper than Facebook Ads for iOS apps?",
+        answer:
+          "Not always. ASA can be more expensive per install on competitive terms, but high-intent search often converts better. Compare channels on trial and revenue outcomes over a full conversion window, not day-three CPI.",
+      },
+      {
+        question:
+          "Why is Apple Search Ads easier to measure than Facebook Ads after ATT?",
+        answer:
+          "ASA attribution sits inside Apple's ecosystem and can be joined to subscription revenue at the keyword level more cleanly. Meta on iOS relies more on limited ATT opt-ins, SKAdNetwork, and modeled conversions, which often makes paying-user attribution noisier for indie apps.",
+      },
+      {
+        question:
+          "Can I run Apple Search Ads and Facebook Ads at the same time?",
+        answer:
+          "Yes, once you can measure revenue by source and have enough budget for both to produce signal. For a first learning test, run one channel cleanly instead of splitting a small budget across both.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Facebook Ads" },
+      { name: "iOS User Acquisition" },
+      { name: "App Tracking Transparency" },
+      { name: "Subscription App Marketing" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "Meta Ads",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "Meta's advertising platform for Facebook, Instagram, and related placements.",
+      },
+    ],
+    keywords: [
+      "apple search ads vs facebook ads",
+      "asa vs meta ads ios",
+      "apple search ads vs meta 2026",
+      "best paid acquisition channel ios app",
+      "facebook ads for subscription apps",
+      "apple search ads after ATT",
+      "ios user acquisition 2026",
+      "asa or facebook ads first",
+      "app store search ads vs social ads",
+      "indie app paid acquisition",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "trial-started-roas-didnt-move",
     title: "Your Trial Started. Your ROAS Didn't Move. Now What?",
     description:
