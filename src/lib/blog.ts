@@ -54,6 +54,81 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "exact-vs-broad-match-apple-search-ads",
+    title:
+      "Exact Match vs Broad Match in Apple Search Ads: What Beginners Should Use",
+    description:
+      "Exact match gives beginners clean keyword signal. Broad match expands reach later. Here is which Apple Search Ads match type to use first, and when to switch.",
+    image: {
+      src: "/images/blog/exact-vs-broad-match-apple-search-ads/cover.png",
+      alt: "Diagram comparing Apple Search Ads Exact match keywords to Broad match expansion for beginner campaigns",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Should beginners use Exact or Broad match in Apple Search Ads?",
+        answer:
+          "Start with Exact match. It keeps learning clean by tying spend to specific search phrases. Add Broad match later in a separate discovery ad group once Exact keywords show which intents convert.",
+      },
+      {
+        question: "What is the difference between Exact and Broad match in ASA?",
+        answer:
+          "Exact match shows your ad for a keyword and close variants like plurals or misspellings. Broad match lets Apple show your ad for related searches, including looser variations and synonyms, which increases reach but reduces control.",
+      },
+      {
+        question:
+          "Is Broad match the same as Search Match in Apple Search Ads?",
+        answer:
+          "No. Broad match expands around keywords you added. Search Match lets Apple bid on additional terms beyond your keyword list using app metadata and other signals. Beginners should usually turn Search Match off and start with Exact match.",
+      },
+      {
+        question: "When should I turn on Broad match in Apple Search Ads?",
+        answer:
+          "After Exact brand and long-tail category campaigns have produced clear conversion lessons, attribution is working, and you can review search terms weekly to promote winners into Exact and negative out junk.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Exact Match Keywords" },
+      { name: "Broad Match Keywords" },
+      { name: "Keyword Bidding Strategy" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads exact match",
+      "apple search ads broad match",
+      "exact vs broad match ASA",
+      "apple search ads match types",
+      "asa exact match for beginners",
+      "when to use broad match apple search ads",
+      "search match vs broad match",
+      "apple search ads keyword match type",
+      "asa beginner keyword setup",
+      "exact match apple search ads strategy",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-vs-facebook-ads-ios-2026",
     title: "Apple Search Ads vs Facebook Ads for iOS Apps in 2026",
     description:
