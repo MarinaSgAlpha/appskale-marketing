@@ -54,6 +54,81 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-negative-keywords",
+    title: "Apple Search Ads Negative Keywords: The Quiet Budget Saver",
+    description:
+      "Negative keywords stop Apple Search Ads from spending on searches you never meant to buy. Here is what to block early, and how to harvest more weekly.",
+    image: {
+      src: "/images/blog/apple-search-ads-negative-keywords/cover.png",
+      alt: "Diagram showing Apple Search Ads negative keywords blocking irrelevant search terms while keeping converting queries",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What are negative keywords in Apple Search Ads?",
+        answer:
+          "Negative keywords tell Apple not to show your ad for specific searches. They help block irrelevant queries that waste spend, especially in Broad match or Search Match expansion.",
+      },
+      {
+        question:
+          "Should beginners add negative keywords to Apple Search Ads?",
+        answer:
+          "Yes. Start with obvious mismatches like wrong platform, free-only hunters that never convert, or audience modifiers that do not fit your app. Then harvest more from the search terms report weekly.",
+      },
+      {
+        question:
+          "When should I add a search term as a negative keyword?",
+        answer:
+          "Add it when the intent is clearly wrong for your app, or when a query repeatedly spends without meaningful trials or revenue. Avoid blocking after only one or two taps.",
+      },
+      {
+        question:
+          "Should I use Exact or Broad negative keywords in ASA?",
+        answer:
+          "Use Exact negatives when one query is bad but nearby variants may still be useful. Use Broad negatives for clear waste themes like android or free. When unsure, Exact-negative first and widen later.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Negative Keywords" },
+      { name: "Search Terms Report" },
+      { name: "Broad Match Discovery" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads negative keywords",
+      "asa negative keywords",
+      "negative keywords apple search ads beginners",
+      "block search terms apple search ads",
+      "apple search ads search terms report",
+      "asa budget waste negatives",
+      "exact vs broad negative keywords",
+      "apple search ads irrelevant queries",
+      "negative keyword strategy ASA",
+      "apple search ads weekly optimization",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "exact-vs-broad-match-apple-search-ads",
     title:
       "Exact Match vs Broad Match in Apple Search Ads: What Beginners Should Use",
