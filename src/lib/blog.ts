@@ -54,6 +54,82 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "asa-cpi-great-paywall-conversion-terrible",
+    title: "Your ASA CPI Looks Great. Your Paywall Conversion Is Terrible.",
+    description:
+      "Cheap Apple Search Ads installs are not a win if users never convert. Here is how to tell channel failure from paywall failure, and what to fix first.",
+    image: {
+      src: "/images/blog/asa-cpi-great-paywall-conversion-terrible/cover.png",
+      alt: "Diagram showing strong Apple Search Ads CPI collapsing into weak paywall conversion and flat subscription revenue",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Why is my Apple Search Ads CPI good but revenue still flat?",
+        answer:
+          "CPI only measures how cheaply you bought installs. Revenue stays flat when users bounce before the paywall, skip the trial offer, or fail to convert after trial. That can be a funnel problem, a traffic-quality problem, or both.",
+      },
+      {
+        question:
+          "How do I know if Apple Search Ads or my paywall is the problem?",
+        answer:
+          "Compare organic and paid conversion in the same storefront. If organic converts and paid does not, inspect keyword intent and match expansion. If both convert poorly, fix onboarding and the paywall before scaling ASA.",
+      },
+      {
+        question:
+          "What should I track after cost per install in Apple Search Ads?",
+        answer:
+          "Track install to activation, activation to paywall view, paywall to trial start, trial to paid, and revenue per keyword. Those handoffs show where the funnel breaks after a cheap install.",
+      },
+      {
+        question:
+          "Should I pause Apple Search Ads if CPI is low but trials are weak?",
+        answer:
+          "Not automatically. First check whether users reach the paywall and whether organic traffic converts. Pause clear junk keywords, but fix offer and onboarding issues before killing the whole channel.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Cost Per Install" },
+      { name: "Paywall Conversion" },
+      { name: "Subscription Funnel" },
+      { name: "Keyword-Level Revenue" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads cpi good revenue flat",
+      "asa paywall conversion",
+      "cheap installs no subscribers",
+      "apple search ads funnel leak",
+      "cpi vs revenue apple search ads",
+      "subscription app paywall asa",
+      "organic vs paid conversion ios",
+      "apple search ads trial conversion",
+      "fix asa or fix paywall",
+      "revenue per keyword apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-negative-keywords",
     title: "Apple Search Ads Negative Keywords: The Quiet Budget Saver",
     description:
