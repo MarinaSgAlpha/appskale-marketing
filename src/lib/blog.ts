@@ -54,6 +54,81 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "competitor-keywords-apple-search-ads",
+    title: "Should You Bid on Competitor Keywords in Apple Search Ads?",
+    description:
+      "Competitor keywords in Apple Search Ads can steal demand or burn budget. Here is when conquest is worth testing, and how to run it without wrecking learning.",
+    image: {
+      src: "/images/blog/competitor-keywords-apple-search-ads/cover.png",
+      alt: "Diagram comparing brand defense, category keywords, and competitor conquest keywords in Apple Search Ads",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Should beginners bid on competitor keywords in Apple Search Ads?",
+        answer:
+          "Usually not in the first learning month. Defend your own brand and test long-tail category keywords first. Add a small Exact-match competitor test only after you can measure trials and revenue by keyword.",
+      },
+      {
+        question: "Do competitor keywords work in Apple Search Ads?",
+        answer:
+          "They can, when your listing can win the side-by-side comparison and users are open to alternatives. They often fail when you bid on giant brands, lack reviews, or judge success on installs instead of subscription revenue.",
+      },
+      {
+        question:
+          "Should competitor keywords be in the same ad group as category keywords?",
+        answer:
+          "No. Keep competitor conquest in a separate Exact-match ad group with its own budget cap so it does not pollute brand defense or category learning.",
+      },
+      {
+        question:
+          "How many competitor keywords should I test in Apple Search Ads?",
+        answer:
+          "Start with two to five Exact rival names, a hard daily cap, Search Match off, and a clear decision after one trial conversion window. Scale only if revenue justifies it versus your best category terms.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Competitor Keywords" },
+      { name: "Brand Defense" },
+      { name: "Conquest Advertising" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "competitor keywords apple search ads",
+      "bid on competitor keywords ASA",
+      "apple search ads conquest",
+      "should I bid on competitor app names",
+      "asa brand vs competitor keywords",
+      "apple search ads competitor bidding",
+      "conquest keywords ios apps",
+      "apple search ads rival brand keywords",
+      "asa competitor keyword strategy",
+      "defend brand before competitor keywords",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "how-many-keywords-apple-search-ads",
     title: "How Many Keywords Should You Run in Apple Search Ads?",
     description:
