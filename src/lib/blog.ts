@@ -54,6 +54,79 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "how-many-keywords-apple-search-ads",
+    title: "How Many Keywords Should You Run in Apple Search Ads?",
+    description:
+      "More Apple Search Ads keywords are not more coverage on a small budget. Here is a practical range for beginners, how to structure them, and when to grow the list.",
+    image: {
+      src: "/images/blog/how-many-keywords-apple-search-ads/cover.png",
+      alt: "Diagram showing a focused Apple Search Ads keyword list versus an overcrowded account that cannot produce clear signal",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "How many keywords should beginners run in Apple Search Ads?",
+        answer:
+          "For a first learning phase in one storefront, roughly 12–20 Exact keywords is a practical range: a few brand variants plus about 10–15 long-tail category terms. Smaller daily budgets should stay toward the low end.",
+      },
+      {
+        question: "Is it bad to run 50+ keywords in Apple Search Ads?",
+        answer:
+          "On a small budget, yes, often. Too many keywords starve each term of spend, slow decisions, and blur reporting. Grow past twenty only after the current list produces clear keep, pause, and scale decisions.",
+      },
+      {
+        question:
+          "Should brand and category keywords be in the same ad group?",
+        answer:
+          "No. Keep brand Exact separate from category Exact, and put discovery (Broad or Search Match tests) in its own ad group later. One match type per ad group while you learn.",
+      },
+      {
+        question: "When should I add more Apple Search Ads keywords?",
+        answer:
+          "Add keywords after existing Exact terms show which intents convert, or when discovery surfaces a converting search term you can promote to Exact. Do not add keywords just because the account feels quiet.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Keyword Strategy" },
+      { name: "Ad Group Structure" },
+      { name: "Exact Match Campaigns" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "how many keywords apple search ads",
+      "asa keyword count beginners",
+      "apple search ads keyword list size",
+      "too many keywords apple search ads",
+      "asa ad group structure",
+      "brand vs category keyword count",
+      "apple search ads 15 keywords",
+      "when to add keywords asa",
+      "exact match keyword limit indie apps",
+      "apple search ads campaign structure",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "asa-cpi-great-paywall-conversion-terrible",
     title: "Your ASA CPI Looks Great. Your Paywall Conversion Is Terrible.",
     description:
