@@ -101,7 +101,7 @@ export function AsaCpiGreatPaywallConversionTerribleBody() {
 
       <H2>The metrics that matter after CPI</H2>
       <P>
-        Once installs are coming in, stop starring at CPI alone. Watch the
+        Once installs are coming in, stop staring at CPI alone. Watch the
         handoffs:
       </P>
       <UL>
