@@ -54,6 +54,78 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-daily-budget",
+    title: "Apple Search Ads Daily Budget: How Much Is Enough to Learn?",
+    description:
+      "Too little Apple Search Ads budget starves keywords. Too much burns cash early. Here is a practical daily range for indie apps and when to raise spend.",
+    image: {
+      src: "/images/blog/apple-search-ads-daily-budget/cover.png",
+      alt: "Diagram showing Apple Search Ads daily budget as multi-week learning runway rather than one-day install chasing",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "How much should I spend per day on Apple Search Ads?",
+        answer:
+          "For many indie subscription apps testing in one storefront, about $10–15/day is a minimum viable learning budget on a tight Exact keyword list, with about $15–25/day often more comfortable. Below roughly $10/day, most keyword lists never get a fair sample.",
+      },
+      {
+        question: "Is $5 a day enough for Apple Search Ads?",
+        answer:
+          "Usually not across a full beginner keyword list. At $5/day, terms starve and decisions get noisy. If that is all you can risk, shrink the test to brand Exact or a handful of long-tail terms in one storefront.",
+      },
+      {
+        question: "How long should I run an Apple Search Ads learning budget?",
+        answer:
+          "Plan for four to six weeks of steady daily spend so keywords get repeated auctions and trials have time to convert. A one-day spend spike is not the same as multi-week runway.",
+      },
+      {
+        question: "When should I raise my Apple Search Ads daily budget?",
+        answer:
+          "Raise budget when specific Exact keywords show trials or revenue and are limited by budget, not when blended CPI looks cheap. Fix funnel leaks and pause losers before scaling the whole account.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Daily Budget" },
+      { name: "Learning Campaigns" },
+      { name: "Keyword Testing" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads daily budget",
+      "how much to spend on apple search ads",
+      "asa learning budget",
+      "apple search ads $10 a day",
+      "asa budget for beginners",
+      "apple search ads minimum budget",
+      "when to raise asa budget",
+      "apple search ads runway",
+      "indie app apple search ads spend",
+      "asa daily cap strategy",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "competitor-keywords-apple-search-ads",
     title: "Should You Bid on Competitor Keywords in Apple Search Ads?",
     description:

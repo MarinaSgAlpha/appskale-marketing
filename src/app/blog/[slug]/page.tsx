@@ -19,6 +19,7 @@ import { KeywordAudit30DayBody } from "@/components/blog/posts/apple-search-ads-
 import { RoasByCountryBody } from "@/components/blog/posts/apple-search-ads-roas-by-country";
 import { AppsFlyerAlternativeIndieDevsBody } from "@/components/blog/posts/appsflyer-alternative-indie-devs";
 import { SpendVsOrganicRankBody } from "@/components/blog/posts/does-apple-search-ads-spend-actually-affect-your-organic-app-store-ranking";
+import { AppleSearchAdsDailyBudgetBody } from "@/components/blog/posts/apple-search-ads-daily-budget";
 import { CompetitorKeywordsAppleSearchAdsBody } from "@/components/blog/posts/competitor-keywords-apple-search-ads";
 import { HowManyKeywordsAppleSearchAdsBody } from "@/components/blog/posts/how-many-keywords-apple-search-ads";
 import { AsaCpiGreatPaywallConversionTerribleBody } from "@/components/blog/posts/asa-cpi-great-paywall-conversion-terrible";
@@ -40,6 +41,7 @@ import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keyw
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "apple-search-ads-daily-budget": AppleSearchAdsDailyBudgetBody,
   "competitor-keywords-apple-search-ads": CompetitorKeywordsAppleSearchAdsBody,
   "how-many-keywords-apple-search-ads": HowManyKeywordsAppleSearchAdsBody,
   "asa-cpi-great-paywall-conversion-terrible":
