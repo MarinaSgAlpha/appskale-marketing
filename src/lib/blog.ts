@@ -1496,6 +1496,24 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+/** Posts shown per page on the blog index (two-column grid). */
+export const BLOG_POSTS_PER_PAGE = 8;
+
+export function getBlogPageCount(): number {
+  return Math.max(1, Math.ceil(BLOG_POSTS.length / BLOG_POSTS_PER_PAGE));
+}
+
+export function getPostsForPage(page: number): BlogPost[] {
+  const totalPages = getBlogPageCount();
+  const safePage = Math.min(Math.max(1, page), totalPages);
+  const start = (safePage - 1) * BLOG_POSTS_PER_PAGE;
+  return BLOG_POSTS.slice(start, start + BLOG_POSTS_PER_PAGE);
+}
+
+export function getBlogPageHref(page: number): string {
+  return page <= 1 ? "/blog" : `/blog/page/${page}`;
+}
+
 /**
  * Return the chronologically adjacent posts for a given slug.
  * BLOG_POSTS is ordered newest → oldest, so the newer post sits at index - 1
