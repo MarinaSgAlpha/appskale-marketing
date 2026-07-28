@@ -54,6 +54,78 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cpt-vs-cpi-apple-search-ads",
+    title: "CPT vs CPI in Apple Search Ads: Which Number Should You Trust?",
+    description:
+      "CPT is tap cost. CPI is install cost. Neither is ROAS. Here is how to use each Apple Search Ads metric without optimizing the wrong number.",
+    image: {
+      src: "/images/blog/cpt-vs-cpi-apple-search-ads/cover.png",
+      alt: "Diagram comparing Apple Search Ads CPT cost per tap with CPI cost per install and revenue per keyword",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is CPT in Apple Search Ads?",
+        answer:
+          "CPT is cost per tap. It is what you pay when someone taps your ad. Your max CPT bid is the auction ceiling; average CPT is what you actually paid across taps.",
+      },
+      {
+        question: "What is CPI in Apple Search Ads?",
+        answer:
+          "CPI is cost per install: spend divided by attributed installs. It includes tap-to-install conversion, so listing quality and relevance affect CPI even when CPT stays the same.",
+      },
+      {
+        question: "Should I optimize Apple Search Ads for CPT or CPI?",
+        answer:
+          "Use CPT for bid and auction context, and CPI for install efficiency. For subscription apps, scale decisions should follow revenue or ROAS by keyword, not the lowest CPT or CPI alone.",
+      },
+      {
+        question: "Why can low CPI still be bad in Apple Search Ads?",
+        answer:
+          "A low CPI only means downloads were cheap. If those users never start a trial or pay, the keyword still loses money. Cheap installs into a weak funnel or bad intent are not a win.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Cost Per Tap" },
+      { name: "Cost Per Install" },
+      { name: "Return on Ad Spend" },
+      { name: "Keyword-Level Analytics" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads cpt vs cpi",
+      "cost per tap apple search ads",
+      "cost per install apple search ads",
+      "asa cpt meaning",
+      "asa cpi meaning",
+      "which metric apple search ads",
+      "cpt or cpi optimize",
+      "apple search ads metrics beginners",
+      "revenue per keyword vs cpi",
+      "apple search ads bid metrics",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "apple-search-ads-daily-budget",
     title: "Apple Search Ads Daily Budget: How Much Is Enough to Learn?",
     description:
