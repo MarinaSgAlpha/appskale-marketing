@@ -19,6 +19,7 @@ import { KeywordAudit30DayBody } from "@/components/blog/posts/apple-search-ads-
 import { RoasByCountryBody } from "@/components/blog/posts/apple-search-ads-roas-by-country";
 import { AppsFlyerAlternativeIndieDevsBody } from "@/components/blog/posts/appsflyer-alternative-indie-devs";
 import { SpendVsOrganicRankBody } from "@/components/blog/posts/does-apple-search-ads-spend-actually-affect-your-organic-app-store-ranking";
+import { AppleSearchAdsSearchTermsReportBody } from "@/components/blog/posts/apple-search-ads-search-terms-report";
 import { CptVsCpiAppleSearchAdsBody } from "@/components/blog/posts/cpt-vs-cpi-apple-search-ads";
 import { AppleSearchAdsDailyBudgetBody } from "@/components/blog/posts/apple-search-ads-daily-budget";
 import { CompetitorKeywordsAppleSearchAdsBody } from "@/components/blog/posts/competitor-keywords-apple-search-ads";
@@ -42,6 +43,7 @@ import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keyw
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "apple-search-ads-search-terms-report": AppleSearchAdsSearchTermsReportBody,
   "cpt-vs-cpi-apple-search-ads": CptVsCpiAppleSearchAdsBody,
   "apple-search-ads-daily-budget": AppleSearchAdsDailyBudgetBody,
   "competitor-keywords-apple-search-ads": CompetitorKeywordsAppleSearchAdsBody,

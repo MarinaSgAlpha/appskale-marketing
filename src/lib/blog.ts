@@ -54,6 +54,81 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "apple-search-ads-search-terms-report",
+    title: "How to Read the Apple Search Ads Search Terms Report",
+    description:
+      "The keyword report shows what you meant to buy. The search terms report shows what actually spent. Here is how to promote winners, negative waste, and ignore noise.",
+    image: {
+      src: "/images/blog/apple-search-ads-search-terms-report/cover.png",
+      alt: "Diagram showing Apple Search Ads keywords you bid on versus search terms that actually triggered the ads",
+      width: 1024,
+      height: 682,
+    },
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "What is the difference between keywords and search terms in Apple Search Ads?",
+        answer:
+          "A keyword is the term you add with a match type. A search term is the actual App Store query that matched and spent. On Broad match or Search Match, one keyword can trigger many different search terms.",
+      },
+      {
+        question: "How often should I check the Apple Search Ads search terms report?",
+        answer:
+          "Weekly is enough for most indie budgets. Sort by spend for the last seven days, promote clear winners to Exact, negative clear waste, and leave tiny no-pattern rows alone.",
+      },
+      {
+        question:
+          "Should I add converting search terms as Exact keywords?",
+        answer:
+          "Yes. If a Broad or discovery query clearly produces trials or revenue, promote it to Exact so you can bid and measure it deliberately instead of leaving it buried in expansion.",
+      },
+      {
+        question:
+          "When should I negative a search term in Apple Search Ads?",
+        answer:
+          "Negative a term when the intent is clearly wrong for your app, or when it repeatedly spends without meaningful trials or revenue. Avoid blocking after only one or two taps unless the mismatch is obvious.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Search Terms Report" },
+      { name: "Keyword Optimization" },
+      { name: "Negative Keywords" },
+      { name: "Subscription Revenue Attribution" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads search terms report",
+      "how to read asa search terms",
+      "apple search ads search terms vs keywords",
+      "asa search query report",
+      "promote search terms to exact match",
+      "apple search ads weekly optimization",
+      "search terms negative keywords",
+      "asa broad match search terms",
+      "apple search ads beginner reporting",
+      "keyword level search terms analysis",
+    ],
+    hasBody: true,
+  },
+  {
     slug: "cpt-vs-cpi-apple-search-ads",
     title: "CPT vs CPI in Apple Search Ads: Which Number Should You Trust?",
     description:
