@@ -19,6 +19,26 @@ import { KeywordAudit30DayBody } from "@/components/blog/posts/apple-search-ads-
 import { RoasByCountryBody } from "@/components/blog/posts/apple-search-ads-roas-by-country";
 import { AppsFlyerAlternativeIndieDevsBody } from "@/components/blog/posts/appsflyer-alternative-indie-devs";
 import { SpendVsOrganicRankBody } from "@/components/blog/posts/does-apple-search-ads-spend-actually-affect-your-organic-app-store-ranking";
+import { AppleSearchAdsCpaCapBody } from "@/components/blog/posts/apple-search-ads-cpa-cap";
+import { AppleSearchAdsTtrVsConversionRateBody } from "@/components/blog/posts/apple-search-ads-ttr-vs-conversion-rate";
+import { AppleSearchAdsAgeAndGenderTargetingBody } from "@/components/blog/posts/apple-search-ads-age-and-gender-targeting";
+import { AppleSearchAdsDaypartingBody } from "@/components/blog/posts/apple-search-ads-dayparting";
+import { SameKeywordTwoAppleSearchAdsCampaignsBody } from "@/components/blog/posts/same-keyword-two-apple-search-ads-campaigns";
+import { ManageBidsVsMaximizeConversionsBody } from "@/components/blog/posts/manage-bids-vs-maximize-conversions";
+import { RaiseBudgetVsRaiseBidsAppleSearchAdsBody } from "@/components/blog/posts/raise-budget-vs-raise-bids-apple-search-ads";
+import { AppleSearchAdsPlacementsSearchResultsFirstBody } from "@/components/blog/posts/apple-search-ads-placements-search-results-first";
+import { AsaCustomerTypesNewVsReturningBody } from "@/components/blog/posts/asa-customer-types-new-vs-returning";
+import { AppleAdsBasicVsAdvancedBody } from "@/components/blog/posts/apple-ads-basic-vs-advanced";
+import { AppleSearchAdsCustomProductPagesWhenBody } from "@/components/blog/posts/apple-search-ads-custom-product-pages-when";
+import { AsaSubscriptionVsOneTimePurchaseBody } from "@/components/blog/posts/asa-subscription-vs-one-time-purchase";
+import { WhenToSplitAsaByCountryBody } from "@/components/blog/posts/when-to-split-asa-by-country";
+import { SoftVsHardPaywallAsaTrafficBody } from "@/components/blog/posts/soft-vs-hard-paywall-asa-traffic";
+import { HowLongRunAsaKeywordBeforeDecidingBody } from "@/components/blog/posts/how-long-run-asa-keyword-before-deciding";
+import { PauseVsLowerBidsAppleSearchAdsBody } from "@/components/blog/posts/pause-vs-lower-bids-apple-search-ads";
+import { AdGroupsVsCampaignsAppleSearchAdsBody } from "@/components/blog/posts/ad-groups-vs-campaigns-apple-search-ads";
+import { MaxCptBiddingAppleSearchAdsBody } from "@/components/blog/posts/max-cpt-bidding-apple-search-ads";
+import { AppleSearchAdsImpressionShareBody } from "@/components/blog/posts/apple-search-ads-impression-share";
+import { AppleSearchAdsDiscoveryCampaignsBody } from "@/components/blog/posts/apple-search-ads-discovery-campaigns";
 import { AppleSearchAdsSearchTermsReportBody } from "@/components/blog/posts/apple-search-ads-search-terms-report";
 import { CptVsCpiAppleSearchAdsBody } from "@/components/blog/posts/cpt-vs-cpi-apple-search-ads";
 import { AppleSearchAdsDailyBudgetBody } from "@/components/blog/posts/apple-search-ads-daily-budget";
@@ -43,6 +63,34 @@ import { LongTailKeywordsRankBody } from "@/components/blog/posts/long-tail-keyw
 type Params = { slug: string };
 
 const POST_BODIES: Record<string, ComponentType> = {
+  "apple-search-ads-cpa-cap": AppleSearchAdsCpaCapBody,
+  "apple-search-ads-ttr-vs-conversion-rate":
+    AppleSearchAdsTtrVsConversionRateBody,
+  "apple-search-ads-age-and-gender-targeting":
+    AppleSearchAdsAgeAndGenderTargetingBody,
+  "apple-search-ads-dayparting": AppleSearchAdsDaypartingBody,
+  "same-keyword-two-apple-search-ads-campaigns":
+    SameKeywordTwoAppleSearchAdsCampaignsBody,
+  "manage-bids-vs-maximize-conversions": ManageBidsVsMaximizeConversionsBody,
+  "raise-budget-vs-raise-bids-apple-search-ads":
+    RaiseBudgetVsRaiseBidsAppleSearchAdsBody,
+  "apple-search-ads-placements-search-results-first":
+    AppleSearchAdsPlacementsSearchResultsFirstBody,
+  "asa-customer-types-new-vs-returning": AsaCustomerTypesNewVsReturningBody,
+  "apple-ads-basic-vs-advanced": AppleAdsBasicVsAdvancedBody,
+  "apple-search-ads-custom-product-pages-when":
+    AppleSearchAdsCustomProductPagesWhenBody,
+  "asa-subscription-vs-one-time-purchase": AsaSubscriptionVsOneTimePurchaseBody,
+  "when-to-split-asa-by-country": WhenToSplitAsaByCountryBody,
+  "soft-vs-hard-paywall-asa-traffic": SoftVsHardPaywallAsaTrafficBody,
+  "how-long-run-asa-keyword-before-deciding":
+    HowLongRunAsaKeywordBeforeDecidingBody,
+  "pause-vs-lower-bids-apple-search-ads": PauseVsLowerBidsAppleSearchAdsBody,
+  "ad-groups-vs-campaigns-apple-search-ads":
+    AdGroupsVsCampaignsAppleSearchAdsBody,
+  "max-cpt-bidding-apple-search-ads": MaxCptBiddingAppleSearchAdsBody,
+  "apple-search-ads-impression-share": AppleSearchAdsImpressionShareBody,
+  "apple-search-ads-discovery-campaigns": AppleSearchAdsDiscoveryCampaignsBody,
   "apple-search-ads-search-terms-report": AppleSearchAdsSearchTermsReportBody,
   "cpt-vs-cpi-apple-search-ads": CptVsCpiAppleSearchAdsBody,
   "apple-search-ads-daily-budget": AppleSearchAdsDailyBudgetBody,
@@ -98,13 +146,15 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url: `${SITE.url}/blog/${post.slug}`,
-      images: [{ url: post.image.src, alt: post.image.alt }],
+      ...(post.image
+        ? { images: [{ url: post.image.src, alt: post.image.alt }] }
+        : {}),
     },
     twitter: {
-      card: "summary_large_image",
+      card: post.image ? "summary_large_image" : "summary",
       title: post.title,
       description: post.description,
-      images: [post.image.src],
+      ...(post.image ? { images: [post.image.src] } : {}),
     },
   };
 }
@@ -119,7 +169,7 @@ function buildJsonLd(post: BlogPost): string {
       "@type": "WebPage",
       "@id": `${SITE.url}/blog/${post.slug}`,
     },
-    image: `${SITE.url}${post.image.src}`,
+    ...(post.image ? { image: `${SITE.url}${post.image.src}` } : {}),
     publisher: {
       "@type": "Organization",
       name: SITE.name,
@@ -296,17 +346,19 @@ export default async function BlogPostPage({
                 {post.description}
               </p>
 
-              <div className="mt-10 overflow-hidden rounded-2xl border border-purple-200/40 bg-purple-50 shadow-[0_8px_24px_-12px_rgba(39,31,54,0.18)]">
-                <Image
-                  src={post.image.src}
-                  alt={post.image.alt}
-                  width={post.image.width}
-                  height={post.image.height}
-                  priority
-                  sizes="(min-width: 1024px) 760px, 100vw"
-                  className="h-auto w-full"
-                />
-              </div>
+              {post.image ? (
+                <div className="mt-10 overflow-hidden rounded-2xl border border-purple-200/40 bg-purple-50 shadow-[0_8px_24px_-12px_rgba(39,31,54,0.18)]">
+                  <Image
+                    src={post.image.src}
+                    alt={post.image.alt}
+                    width={post.image.width}
+                    height={post.image.height}
+                    priority
+                    sizes="(min-width: 1024px) 760px, 100vw"
+                    className="h-auto w-full"
+                  />
+                </div>
+              ) : null}
 
               <div className="mt-12 rounded-2xl border border-purple-200/50 bg-white/60 p-6 backdrop-blur-sm sm:p-8">
                 <h2 className="text-lg font-semibold text-purple-900 sm:text-xl">

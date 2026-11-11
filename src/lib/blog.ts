@@ -32,7 +32,8 @@ export type BlogPost = {
   slug: string;
   title: string;
   description: string;
-  image: {
+  /** Optional cover. Index cards and social previews fall back gracefully when omitted. */
+  image?: {
     src: string;
     alt: string;
     width: number;
@@ -53,6 +54,1202 @@ export type BlogPost = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "apple-search-ads-cpa-cap",
+    title: "Should You Set a CPA Cap in Apple Search Ads?",
+    description:
+      "A CPA cap set below your max CPT can quietly stop delivery. Here is when to leave it off, and when a cap is a real control.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is a CPA cap in Apple Search Ads?",
+        answer:
+          "It is an optional ceiling on what you will pay per acquisition in a Manage Bids search results ad group. It is separate from max CPT, and separate from the target CPA used by Maximize Conversions.",
+      },
+      {
+        question: "Should beginners set a CPA cap?",
+        answer:
+          "Usually not. Learn with a max CPT and a daily budget first. A cap set too low, or below your max CPT, can cut impressions before a keyword gets a fair sample.",
+      },
+      {
+        question: "Can a CPA cap be lower than max CPT?",
+        answer:
+          "Apple warns that a cap below your max CPT, or a cap set too low, can cause you to miss impressions and installs. If you use one, keep it above the tap price.",
+      },
+      {
+        question: "How should I remove a CPA cap?",
+        answer:
+          "Apple suggests lowering the bid, waiting a day for that bid to take effect, and then removing the cap. Removing a cap that sat below max CPT can increase the bid you experience.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "CPA Cap" },
+      { name: "Max CPT" },
+      { name: "Bid Management" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads cpa cap",
+      "asa cpa goal vs max cpt",
+      "should I set a cpa cap apple ads",
+      "cpa cap limiting impressions",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-ttr-vs-conversion-rate",
+    title: "Impressions but No Taps, or Taps but No Installs",
+    description:
+      "Tap-through rate and conversion rate break in different places. Here is which one to fix before you raise a bid.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is tap-through rate in Apple Search Ads?",
+        answer:
+          "TTR is taps divided by impressions. It tells you whether people who saw the ad chose it.",
+      },
+      {
+        question: "What is conversion rate in Apple Search Ads?",
+        answer:
+          "Tap-through conversion rate is installs from taps divided by taps. Apple counts those installs, including redownloads, in a 30-day window after the tap.",
+      },
+      {
+        question: "Should I raise my bid if nobody taps?",
+        answer:
+          "Not if the ad is already getting impressions. Low TTR means the query or the ad’s first impression is wrong. Raising CPT buys more views of an ad people scroll past.",
+      },
+      {
+        question: "What if people tap but do not install?",
+        answer:
+          "The product page is the leak. Fix screenshots, ratings, and the promise in the subtitle before you buy more taps. A higher bid does not repair a page that does not convert.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Tap-Through Rate" },
+      { name: "Conversion Rate" },
+      { name: "App Store Product Page" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads tap through rate",
+      "asa conversion rate vs ttr",
+      "impressions but no taps apple ads",
+      "taps but no installs apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-age-and-gender-targeting",
+    title: "Age and Gender Targeting in Apple Search Ads",
+    description:
+      "Demographic targeting only reaches people with Personalized Ads on. Apple says that is a minority of search volume. Here is when to leave it open.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should I target age or gender in Apple Search Ads?",
+        answer:
+          "Usually not at the start. Those settings only reach people with Personalized Ads turned on. Apple reports that 78 percent of App Store search volume on iOS 17 and later came from devices with Personalized Ads off.",
+      },
+      {
+        question: "Does age targeting reduce impressions?",
+        answer:
+          "Yes. Narrowing demographics excludes people in that age or gender who turned Personalized Ads off, so a keyword can look dead when the audience filter is the cause.",
+      },
+      {
+        question:
+          "Is device targeting the same as age and gender targeting?",
+        answer:
+          "No. iPhone versus iPad is a device control. Age and gender are demographic filters tied to Personalized Ads. Leave demographics open and split devices only when your own economics differ.",
+      },
+      {
+        question: "How should I reach a specific audience without demographics?",
+        answer:
+          "Use the search term and the product page. A custom product page can match the query without throwing away most search volume.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Audience Targeting" },
+      { name: "Personalized Ads" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads age targeting",
+      "apple ads gender targeting",
+      "personalized ads apple search ads",
+      "asa demographic targeting impressions",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-dayparting",
+    title: "Should You Daypart Apple Search Ads?",
+    description:
+      "Apple Ads can limit an ad group to hours and days. The schedule uses your account time zone. Most small accounts should leave it off.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Does Apple Search Ads support dayparting?",
+        answer:
+          "Yes. Each ad group can have a start date, an optional end date, and a grid of days and hours. The default is to start today and run without an end date or an hour limit.",
+      },
+      {
+        question: "Which time zone does Apple Ads dayparting use?",
+        answer:
+          "The time zone on the Apple Ads account. That same zone drives reporting. It is not the App Store user’s local time.",
+      },
+      {
+        question: "Should beginners daypart Apple Search Ads?",
+        answer:
+          "No. Restricting hours shrinks an already small sample. Use a schedule for a real event, closed operations, or a pattern you have already measured.",
+      },
+      {
+        question: "Do campaign dates override ad group dates?",
+        answer:
+          "Yes. If an ad group would start before the campaign or end after it, the campaign dates win. A campaign also stops spending once every ad group in it has passed its end date.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Ad Scheduling" },
+      { name: "Dayparting" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads dayparting",
+      "apple ads ad scheduling",
+      "asa daypart time zone",
+      "should I schedule apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "same-keyword-two-apple-search-ads-campaigns",
+    title: "The Same Keyword in Two Apple Search Ads Campaigns",
+    description:
+      "Bidding the same term in brand and discovery splits one query across two histories. Here is how to give each keyword a single home.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "What happens if I bid on the same keyword in two Apple Search Ads campaigns?",
+        answer:
+          "Your app still has one ad in that auction. Spend and results for the query split across two rows, and discovery can keep buying a term you already moved to Exact unless you negative it.",
+      },
+      {
+        question: "Should discovery include keywords I already bid on exactly?",
+        answer:
+          "No. Apple’s structure guidance is to add those exact keywords as exact negatives in discovery, so discovery can find related searches without rebidding the terms you already own.",
+      },
+      {
+        question: "When is it fine to use a keyword twice?",
+        answer:
+          "When the split is the point: a different country, or a new-users ad group versus a returning-users ad group. Same storefront, same audience, and same match type should have one copy.",
+      },
+      {
+        question: "How do I stop Search Match from recapturing a keyword?",
+        answer:
+          "Pause the extra copy and add the keyword as an exact negative in discovery and in any Broad ad group. Deleting the duplicate without the negative lets Search Match buy it again.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Keyword Structure" },
+      { name: "Negative Keywords" },
+      { name: "Discovery Campaigns" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "duplicate keywords apple search ads",
+      "same keyword two campaigns asa",
+      "apple ads keyword cannibalization",
+      "exact negative discovery campaign",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "manage-bids-vs-maximize-conversions",
+    title: "Manage Bids vs Maximize Conversions in Apple Search Ads",
+    description:
+      "Manage Bids is how you learn which searches pay. Maximize Conversions automates toward a target CPA. Here is which one a small account should open with.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "What is the difference between Manage Bids and Maximize Conversions?",
+        answer:
+          "Manage Bids lets you choose keywords and a max cost per tap. Maximize Conversions uses an auto-bidder and Search Match to pursue installs around a target CPA. Both charge per tap and apply to search results campaigns.",
+      },
+      {
+        question:
+          "Should beginners use Maximize Conversions in Apple Search Ads?",
+        answer:
+          "Usually not first. Start with Manage Bids so brand and category keywords stay readable. Use Maximize Conversions later, as a capped expansion, once you have a CPA based on real revenue.",
+      },
+      {
+        question: "Does Maximize Conversions charge per install?",
+        answer:
+          "No. You still pay when someone taps the ad. The target CPA is the average acquisition cost the strategy aims for on a weekly basis, and a single day can land above or below it.",
+      },
+      {
+        question: "Can I use Maximize Conversions for a pre-order app?",
+        answer:
+          "Apple recommends manual bidding for pre-order campaigns. Maximize Conversions is designed for apps that have already launched.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Manage Bids" },
+      { name: "Maximize Conversions" },
+      { name: "Target CPA" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "manage bids vs maximize conversions",
+      "apple search ads maximize conversions",
+      "apple ads target cpa",
+      "asa auto bidder vs manual bids",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "raise-budget-vs-raise-bids-apple-search-ads",
+    title: "Raise the Budget or Raise the Bid in Apple Search Ads?",
+    description:
+      "A bigger daily budget and a higher max CPT fix different stalls. Here is how to tell which lever is actually binding.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Should I raise my Apple Search Ads budget or my bids?",
+        answer:
+          "Raise the bid when budget is left over and a keyword you already want is losing auctions. Raise the budget when a proven keyword hits the daily cap. Do not raise either for unproven or messy traffic.",
+      },
+      {
+        question: "What does bid-limited mean in Apple Search Ads?",
+        answer:
+          "The campaign is not spending its daily budget because the max CPT is too low to win auctions for that keyword. A higher budget will not create more impressions.",
+      },
+      {
+        question: "What does budget-limited mean in Apple Search Ads?",
+        answer:
+          "Spend hits the daily cap and delivery stops while demand remains. Raising the bid makes the taps you already win more expensive. Raising the budget adds volume if the traffic already pays.",
+      },
+      {
+        question:
+          "Should I raise budget and bids at the same time?",
+        answer:
+          "No. Change one number so you can tell which constraint moved. If junk search terms or a shared campaign budget are the real problem, fix those before scaling.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Daily Budget" },
+      { name: "Max CPT" },
+      { name: "Bid Management" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "raise budget or bids apple search ads",
+      "asa budget limited vs bid limited",
+      "apple search ads daily budget vs cpt",
+      "when to raise max cpt",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-placements-search-results-first",
+    title:
+      "Search Results vs Today Tab, Search Tab, and Product Page Ads",
+    description:
+      "Apple Ads has four placements. Only search results has a query you can learn from. Here is why small budgets should start there.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Which Apple Search Ads placement should I start with?",
+        answer:
+          "Search results. It is the only placement with keywords, so you can read, negative, and promote queries. Today tab, Search tab, and product-page ads are browse placements.",
+      },
+      {
+        question: "Do Today tab ads use keywords?",
+        answer:
+          "No. Today tab, Search tab, and product-page placements do not use keywords. Keywords, Manage Bids, and Maximize Conversions apply to search results.",
+      },
+      {
+        question: "When should I test the Search tab?",
+        answer:
+          "After search results already has Exact themes worth keeping. Give Search tab its own campaign and daily cap, then judge trials and revenue rather than adding it on day one.",
+      },
+      {
+        question: "Are product page ads available everywhere?",
+        answer:
+          "Product page ads, shown in You Might Also Like, are not available on the App Store in mainland China. The other three placements have broader availability.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Search Results" },
+      { name: "Today Tab" },
+      { name: "Search Tab" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads placements",
+      "search results vs today tab asa",
+      "apple ads search tab",
+      "product page ads apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "asa-customer-types-new-vs-returning",
+    title: "New Users vs Returning Users in Apple Search Ads",
+    description:
+      "The default audience mixes first installs with redownloads. Here is when to split new users from returning users, and where the filter leaks.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "What is the default customer type in Apple Search Ads?",
+        answer:
+          "All users. That includes prospective, former, and current customers, so a campaign can buy first downloads and redownloads in the same row.",
+      },
+      {
+        question:
+          "Should I target only new users in Apple Search Ads?",
+        answer:
+          "For category acquisition, yes once you have a readable keyword list. Brand defense can include returning users. Judge each group on its own revenue, not on a cheaper blended CPI.",
+      },
+      {
+        question:
+          "Does the new users setting block every redownload?",
+        answer:
+          "No. Personalized Ads being off, customers under 18, a delay of up to seven days the first time you enable it, and very recent downloads can still produce some redownloads.",
+      },
+      {
+        question: "What are returning users in Apple Ads?",
+        answer:
+          "People who downloaded the app before. They may have deleted it, have it on another device, or still have it installed. Installed users see Open. Others see a redownload.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Customer Types" },
+      { name: "New Users" },
+      { name: "Returning Users" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads new users",
+      "asa returning users",
+      "apple ads customer types",
+      "new downloads vs redownloads asa",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-ads-basic-vs-advanced",
+    title: "Apple Ads Basic vs Advanced: Which Should Indie Apps Use?",
+    description:
+      "Basic buys installs with no keywords. Advanced buys taps and shows which searches you paid for. Here is how a small app should choose.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is the difference between Apple Ads Basic and Advanced?",
+        answer:
+          "Basic runs in search results only, charges a cost per install you cap, and does not use keywords. Advanced can run on more placements, charges per tap, and lets you manage keywords, bids, and detailed reports.",
+      },
+      {
+        question: "Should indie apps use Apple Ads Basic or Advanced?",
+        answer:
+          "Use Advanced if you need to learn which searches produce subscribers. Basic fits a short hands-off test where a CPI cap is the only constraint and keyword economics do not matter.",
+      },
+      {
+        question: "Can I run Apple Ads Basic and Advanced on the same app?",
+        answer:
+          "Apple allows it, but only one ad for the same app is eligible in a given auction, and Advanced optimizations are not applied to Basic. Pick one.",
+      },
+      {
+        question: "Does Apple Ads Basic include keyword reporting?",
+        answer:
+          "No. Basic has a quick-view dashboard and the AdServices attribution API. It does not provide keyword rows or the Apple Ads Platform API.",
+      },
+    ],
+    about: [
+      { name: "Apple Ads" },
+      { name: "Apple Ads Basic" },
+      { name: "Apple Ads Advanced" },
+      { name: "Apple Search Ads" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple ads basic vs advanced",
+      "apple search ads basic or advanced",
+      "apple ads basic for indie apps",
+      "apple ads advanced keywords",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-custom-product-pages-when",
+    title: "Custom Product Pages for Apple Search Ads: When They’re Worth It",
+    description:
+      "Custom Product Pages can improve ASA relevance, but only after Exact structure and revenue tracking work. Here is when to bother.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should beginners use Custom Product Pages with Apple Search Ads?",
+        answer:
+          "Usually not first. Get Exact brand/category structure, Search Match control, and revenue tracking working before building CPP variants.",
+      },
+      {
+        question: "When are Custom Product Pages worth it for ASA?",
+        answer:
+          "When you have distinct winning Exact intents, the default page is a compromise across those intents, and you can measure install and revenue impact by keyword.",
+      },
+      {
+        question: "How should I test a Custom Product Page in Apple Search Ads?",
+        answer:
+          "Attach one CPP to one high-intent Exact theme, keep bids and budgets steady, compare against the default page, and judge trials/revenue after the normal conversion lag.",
+      },
+      {
+        question: "Can Custom Product Pages fix a weak App Store listing?",
+        answer:
+          "No. If the default listing fails organic users, more page variants usually multiply work without fixing the core conversion problem.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Custom Product Pages" },
+      { name: "App Store Conversion" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "custom product pages apple search ads",
+      "when to use cpp asa",
+      "asa custom product pages beginners",
+      "app store cpp keyword matching",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "asa-subscription-vs-one-time-purchase",
+    title:
+      "Apple Search Ads for Subscription Apps vs One-Time Purchase Apps",
+    description:
+      "ASA mechanics are the same, but payback clocks differ. Here is what changes between subscriptions and one-time purchase apps.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "Does Apple Search Ads work differently for subscription apps?",
+        answer:
+          "The auction is the same, but subscriptions delay revenue through trials, so ROAS needs a longer window and CPI is more misleading.",
+      },
+      {
+        question:
+          "Can one-time purchase apps judge ASA keywords faster?",
+        answer:
+          "Often yes, because purchase revenue usually lands closer to install. They still need enough sample and should optimize revenue per keyword, not installs alone.",
+      },
+      {
+        question:
+          "What ASA advice applies to both subscription and paid apps?",
+        answer:
+          "Exact brand defense first, long-tail over head terms while learning, Search Match control, clean campaign structure, and search-term harvest.",
+      },
+      {
+        question: "What metric should both models optimize?",
+        answer:
+          "Revenue per keyword. CPT and CPI remain diagnostics for both subscription and one-time purchase apps.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Subscription Apps" },
+      { name: "One-Time Purchases" },
+      { name: "Return on Ad Spend" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads subscription vs paid app",
+      "asa for one time purchase apps",
+      "subscription app apple search ads metrics",
+      "paid app asa learning window",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "when-to-split-asa-by-country",
+    title: "When to Split Apple Search Ads by Country",
+    description:
+      "Multi-country ASA too early hides bad economics in averages. Here is when one storefront is enough, and when country splits are worth it.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should beginners run Apple Search Ads in multiple countries?",
+        answer:
+          "Usually no. Start with one storefront until Exact brand and category keywords produce clear keep/pause decisions.",
+      },
+      {
+        question: "When should I split ASA campaigns by country?",
+        answer:
+          "After you have a home-market baseline, real demand in a second market, likely different LTV or pricing, and enough budget to fund both without starvation.",
+      },
+      {
+        question: "Why is blended multi-country ROAS misleading?",
+        answer:
+          "The same keyword can have different CPT, trial rates, and LTV by storefront. Blended ROAS averages winners and losers into a mediocre number.",
+      },
+      {
+        question: "How should I expand to a second country in ASA?",
+        answer:
+          "Use a separate campaign, copy proven Exact themes first, recheck search terms per market, and judge each country on its own revenue timeline.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "International Growth" },
+      { name: "ROAS by Country" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads by country",
+      "when to split asa countries",
+      "multi country apple search ads beginners",
+      "asa storefront strategy",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "soft-vs-hard-paywall-asa-traffic",
+    title: "Soft vs Hard Paywall for Apple Search Ads Traffic",
+    description:
+      "Hard paywalls can work for high-intent ASA traffic and fail for cold category search. Here is how to choose and measure with keyword cohorts.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should Apple Search Ads traffic use a hard paywall?",
+        answer:
+          "It can, especially for brand and high-intent long-tail traffic, if organic conversion on that gate is already decent. Cold category traffic often needs proof first.",
+      },
+      {
+        question: "When is a soft paywall better for ASA?",
+        answer:
+          "When category keywords need a quick aha moment, setup is required before value, or hard-paywall trial starts stay near zero despite decent CPI.",
+      },
+      {
+        question: "How do I know if my paywall is killing ASA performance?",
+        answer:
+          "Compare organic vs paid trial rates, split brand vs category, and check whether users reach the paywall at all before judging keyword quality alone.",
+      },
+      {
+        question: "Should I change paywall and ASA keywords at the same time?",
+        answer:
+          "No. Hold the keyword mix and budget steady while testing the gate, then compare trial and revenue outcomes after one trial cycle.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Paywalls" },
+      { name: "Subscription Conversion" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "soft vs hard paywall apple search ads",
+      "asa traffic paywall",
+      "hard paywall subscription asa",
+      "paywall conversion apple search ads",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "how-long-run-asa-keyword-before-deciding",
+    title: "How Long Should You Run an Apple Search Ads Keyword Before Deciding?",
+    description:
+      "Pause too fast and you kill winners. Wait forever and you fund losers. Here is a practical timeline for Exact keyword decisions on indie budgets.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "How long should I run an ASA keyword before pausing?",
+        answer:
+          "Wait for both enough auction sample and enough conversion time. For plausible intent, that usually means through at least one trial cycle. Pause earlier only for clear intent mismatches.",
+      },
+      {
+        question: "Can I pause an Apple Search Ads keyword after a few days?",
+        answer:
+          "Yes for obvious waste like wrong-platform or junk search terms. No for uncertain economics on a plausible keyword with tiny sample or unfinished trial lag.",
+      },
+      {
+        question: "What is enough sample for indie ASA accounts?",
+        answer:
+          "Relative to your daily budget: meaningful spend with zero trials after about two weeks is often enough to pause, while a handful of taps is not enough to crown or kill.",
+      },
+      {
+        question: "Should Broad match keywords use the same wait window?",
+        answer:
+          "Judge Broad through search-term harvest, not one averaged keyword row. Promote winners to Exact and negative waste on a weekly loop.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Keyword Testing" },
+      { name: "Conversion Lag" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "how long run apple search ads keyword",
+      "when to pause asa keyword",
+      "asa keyword testing timeline",
+      "apple search ads learning window",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "pause-vs-lower-bids-apple-search-ads",
+    title: "When to Pause vs Lower Bids in Apple Search Ads",
+    description:
+      "Pause bad intent. Lower bids on expensive-but-plausible keywords. Wait when the sample is incomplete. Here is how to choose without weekly panic edits.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should I pause or lower bids in Apple Search Ads?",
+        answer:
+          "Pause when intent is clearly wrong or a keyword repeatedly spends without trials or revenue. Lower max CPT when the intent still looks right but the price looks too high. Wait when the sample or trial window is incomplete.",
+      },
+      {
+        question: "When should I pause an Apple Search Ads keyword?",
+        answer:
+          "Pause after meaningful spend shows installs with no trial path, clear search-term mismatches, failed competitor conquest, or head terms you added too early.",
+      },
+      {
+        question: "When should I lower max CPT instead of pausing?",
+        answer:
+          "Lower bids when trials or early revenue exist but CPT climbed, or when you want less volume without deleting the keyword’s learning history.",
+      },
+      {
+        question: "Should I change Apple Search Ads bids every day?",
+        answer:
+          "No. Review weekly, change one lever at a time, and avoid pause/unpause/bid-cut cycles before a clean sample finishes.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Bid Management" },
+      { name: "Keyword Optimization" },
+      { name: "Campaign Operations" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "pause apple search ads keyword",
+      "lower bids apple search ads",
+      "when to pause asa keywords",
+      "max cpt vs pause",
+      "apple search ads bid management",
+      "asa keyword optimization beginners",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "ad-groups-vs-campaigns-apple-search-ads",
+    title: "Ad Groups vs Campaigns in Apple Search Ads",
+    description:
+      "Campaigns hold budgets and kill switches. Ad groups hold match types and keyword themes. Here is a clean beginner structure that keeps learning readable.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question:
+          "What is the difference between campaigns and ad groups in Apple Search Ads?",
+        answer:
+          "Campaigns are outer containers for budget, storefront, and major strategy buckets. Ad groups sit inside campaigns and hold match type, keyword theme, and default max CPT settings.",
+      },
+      {
+        question: "How should beginners structure Apple Search Ads campaigns?",
+        answer:
+          "Start with separate campaigns for brand Exact and category Exact in one storefront. Add discovery or competitor tests later in their own capped campaigns.",
+      },
+      {
+        question:
+          "Should brand and category keywords share one Apple Search Ads campaign?",
+        answer:
+          "Usually no. Brand defense and category learning need separate budgets and clearer reporting, so keep them in different campaigns.",
+      },
+      {
+        question: "Can I put Exact and Broad match in the same ad group?",
+        answer:
+          "Avoid it while learning. One match type per ad group keeps bids and search-term harvest readable.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Campaign Structure" },
+      { name: "Ad Groups" },
+      { name: "Keyword Strategy" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads campaign structure",
+      "ad groups vs campaigns asa",
+      "asa beginner campaign setup",
+      "brand category separate campaigns",
+      "apple search ads ad group match type",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "max-cpt-bidding-apple-search-ads",
+    title: "Max CPT Bidding for Beginners: How High Should You Go?",
+    description:
+      "Max CPT is a ceiling, not a goal. Here is how indie apps should set Apple Search Ads bids for brand and long-tail learning without overpaying.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is max CPT in Apple Search Ads?",
+        answer:
+          "Max CPT is the most you are willing to pay for a tap. Apple may charge less, but your ceiling controls how aggressive you are in the auction.",
+      },
+      {
+        question: "How should beginners set max CPT?",
+        answer:
+          "Bid competitively enough to defend brand Exact, start more modestly on long-tail category Exact, keep one storefront, and adjust from delivery plus conversion—not from fear of missing head-term auctions.",
+      },
+      {
+        question: "When should I raise max CPT?",
+        answer:
+          "Raise when brand is under-showing, or when a keyword already produces trials or revenue and looks bid-limited. Do not raise CPT just because impression share is low on an unproven term.",
+      },
+      {
+        question: "When should I lower max CPT?",
+        answer:
+          "Lower it when intent still looks right but price looks too high, or when junk search terms are riding an expensive ceiling. Pause instead when intent is clearly wrong.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Cost Per Tap" },
+      { name: "Bid Strategy" },
+      { name: "Keyword Auctions" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads max cpt",
+      "how to set cpt asa",
+      "asa bidding for beginners",
+      "raise max cpt apple search ads",
+      "apple search ads bid ceiling",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-impression-share",
+    title: "Apple Search Ads Impression Share: What It Actually Means",
+    description:
+      "Low impression share does not automatically mean raise bids. Here is when coverage matters for brand and revenue winners, and when chasing share wastes budget.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "What is impression share in Apple Search Ads?",
+        answer:
+          "Impression share is the portion of eligible impressions your ad received versus impressions available in auctions you qualified for. Low share means you are missing some eligible impressions.",
+      },
+      {
+        question: "Should I raise bids when impression share is low?",
+        answer:
+          "Only after the keyword already shows trials or revenue and looks bid- or budget-limited. Do not chase share on unproven head terms or discovery junk.",
+      },
+      {
+        question: "Does low brand impression share matter?",
+        answer:
+          "Yes, more than low share on generic category heads. If people search your app name and you are often absent, competitors can capture that demand.",
+      },
+      {
+        question: "Is impression share a profit metric?",
+        answer:
+          "No. It is a coverage metric. Revenue per keyword still decides keep, pause, and scale.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Impression Share" },
+      { name: "Auction Insights" },
+      { name: "Bid Management" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads impression share",
+      "asa impression share meaning",
+      "low impression share raise bids",
+      "brand impression share apple search ads",
+      "apple search ads coverage metric",
+    ],
+    hasBody: true,
+  },
+  {
+    slug: "apple-search-ads-discovery-campaigns",
+    title: "Should You Use Apple Search Ads Discovery Campaigns?",
+    description:
+      "Discovery can find new keywords or burn learning budget. Here is when to skip it, when to run a capped test, and how to harvest search terms properly.",
+    author: { name: "Sam H", url: "https://www.linkedin.com/in/mghtut/" },
+    faq: [
+      {
+        question: "Should beginners use Apple Search Ads discovery campaigns?",
+        answer:
+          "Usually not in the first learning phase. Prove Exact brand and long-tail category first, then add a capped discovery test only if you will harvest search terms weekly.",
+      },
+      {
+        question: "What are Apple Search Ads discovery campaigns for?",
+        answer:
+          "They expand beyond your Exact list to surface new search terms. The point is a harvest loop: promote winners to Exact and negative waste, not unlimited install volume.",
+      },
+      {
+        question: "How should I budget an ASA discovery test?",
+        answer:
+          "Give discovery its own hard daily cap, smaller than Exact learning spend, so expansion cannot starve brand and category campaigns.",
+      },
+      {
+        question: "How do I know if discovery is working?",
+        answer:
+          "It works when it produces Exact keywords worth promoting after a fair window. If it only creates a messy search-terms table and flat revenue, pause it.",
+      },
+    ],
+    about: [
+      { name: "Apple Search Ads" },
+      { name: "Discovery Campaigns" },
+      { name: "Search Match" },
+      { name: "Broad Match" },
+    ],
+    mentions: [
+      {
+        type: "SoftwareApplication",
+        name: "AppSkale",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        description:
+          "An Apple Search Ads analytics tool that shows keyword-level spend and RevenueCat subscription revenue on the same screen.",
+      },
+      {
+        type: "SoftwareApplication",
+        name: "RevenueCat",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "iOS, Android, Web",
+        description: "A subscription management platform for mobile apps.",
+      },
+    ],
+    keywords: [
+      "apple search ads discovery campaigns",
+      "should i use asa discovery",
+      "asa search match discovery",
+      "apple search ads find new keywords",
+      "discovery campaign harvest search terms",
+    ],
+    hasBody: true,
+  },
   {
     slug: "apple-search-ads-search-terms-report",
     title: "How to Read the Apple Search Ads Search Terms Report",

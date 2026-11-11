@@ -102,23 +102,25 @@ function PostCard({
     <li>
       <Link
         href={`/blog/${post.slug}`}
-        className="group flex h-full flex-col gap-3"
+        className="group flex h-full flex-col gap-3 rounded-2xl border border-purple-200/40 bg-white/50 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-purple-300 hover:bg-white hover:shadow-[0_12px_32px_-12px_rgba(39,31,54,0.25)]"
       >
-        <div className="relative overflow-hidden rounded-2xl border border-purple-200/40 bg-purple-50 shadow-[0_8px_24px_-12px_rgba(39,31,54,0.18)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:shadow-[0_12px_32px_-12px_rgba(39,31,54,0.25)]">
-          <Image
-            src={post.image.src}
-            alt={post.image.alt}
-            width={post.image.width}
-            height={post.image.height}
-            priority={priority}
-            sizes="(min-width: 1024px) 460px, (min-width: 640px) 45vw, 100vw"
-            className="h-auto w-full"
-          />
-        </div>
+        {post.image ? (
+          <div className="relative -mx-5 -mt-5 overflow-hidden rounded-t-2xl border-b border-purple-200/40 bg-purple-50">
+            <Image
+              src={post.image.src}
+              alt={post.image.alt}
+              width={post.image.width}
+              height={post.image.height}
+              priority={priority}
+              sizes="(min-width: 1024px) 460px, (min-width: 640px) 45vw, 100vw"
+              className="h-auto w-full"
+            />
+          </div>
+        ) : null}
         <h2 className="text-balance text-[17px] font-semibold leading-snug tracking-tight text-purple-900 transition-colors group-hover:text-purple-700 sm:text-[18px]">
           {post.title}
         </h2>
-        <p className="text-pretty text-sm leading-relaxed text-purple-800/75 line-clamp-2">
+        <p className="text-pretty text-sm leading-relaxed text-purple-800/75 line-clamp-3">
           {post.description}
         </p>
       </Link>
