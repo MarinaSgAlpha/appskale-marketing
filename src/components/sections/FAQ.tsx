@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: "Do you offer customer support?",
-    a: "Yes. Free plans get email support, Pro plans get priority email support, and Enterprise plans get a dedicated point of contact for onboarding and ongoing optimisation.",
+    a: "Yes. Lite plans get email support, Pro plans get priority email support, and Enterprise plans get a dedicated point of contact for onboarding and ongoing optimisation.",
   },
   {
-    q: "Is there a free trial available?",
-    a: "Yes — the Free plan is genuinely free, with no time limit. It includes LTV & transaction data for one app and up to $2k/month ad spend. Upgrade to Pro when you outgrow it.",
+    q: "Which plan should I pick?",
+    a: "Lite is $29.99/month and is suggested under $5k/month of Apple Search Ads spend. Pro is $129/month and is suggested at $5k/month or more. Either plan includes keyword-level ROAS. The spend bands are a suggestion, not a limit.",
   },
 ];
 

@@ -17,8 +17,8 @@ AppSkale is an Apple Search Ads analytics platform built for iOS subscription ap
 
 ## Pricing summary
 
-- Free: $0/month — LTV & Transaction Data, 1 app, up to $2k/month ad spend
-- Pro: $129/month — Keyword Level ROAS, 3 apps, up to $15k/month ad spend
+- Lite: $29.99/month — Keyword Level ROAS, 3 apps, suggested under $5k/month ad spend
+- Pro: $129/month — Keyword Level ROAS, 3 apps, suggested at $5k/month ad spend or more
 - Enterprise: contact sales — Unlimited apps, $15k+/month ad spend, white-glove setup
 
 ## Key pages

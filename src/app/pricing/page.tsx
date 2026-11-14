@@ -11,11 +11,11 @@ import { URLS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, scalable plans for Apple Search Ads attribution. Start free, upgrade when you need keyword-level ROAS, or talk to us about Enterprise.",
+    "Lite and Pro plans for Apple Search Ads attribution, plus Enterprise when you need a custom setup.",
 };
 
 type Plan = {
-  id: "free" | "pro" | "enterprise";
+  id: "lite" | "pro" | "enterprise";
   name: string;
   icon?: string;
   highlight?: boolean;
@@ -32,17 +32,17 @@ type Plan = {
 
 const plans: Plan[] = [
   {
-    id: "free",
-    name: "Free",
+    id: "lite",
+    name: "Lite",
     rows: {
-      price: "$0",
-      feature: "LTV & Transaction Data",
-      apps: "1 App",
-      spend: "Up to $2k/month ad spend",
+      price: "$29.99",
+      feature: "Keyword Level ROAS",
+      apps: "3 Apps",
+      spend: "Under $5k/month",
       setup: "Self-service",
       support: "Email Support",
     },
-    cta: { label: "Signup Free", href: URLS.signup },
+    cta: { label: "Get started", href: URLS.signup },
   },
   {
     id: "pro",
@@ -53,11 +53,11 @@ const plans: Plan[] = [
       price: "$129",
       feature: "Keyword Level ROAS",
       apps: "3 Apps",
-      spend: "Up to $15k/month",
+      spend: "$5k/month or more",
       setup: "Self-service",
       support: "Priority Email Support",
     },
-    cta: { label: "Start For Free", href: URLS.signup },
+    cta: { label: "Get started", href: URLS.signup },
   },
   {
     id: "enterprise",
@@ -131,6 +131,10 @@ export default function PricingPage() {
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-purple-200/75 sm:text-base">
             While your competitors guess, you&apos;ll know exactly which
             keywords are profitable
+          </p>
+          <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-purple-200/70">
+            Lite is suggested under $5k/month of Apple Search Ads spend. Pro
+            is suggested at $5k/month or more. You can choose either plan.
           </p>
         </div>
 

@@ -16,8 +16,8 @@ export function StructuredData() {
     offers: [
       {
         "@type": "Offer",
-        name: "Free",
-        price: "0",
+        name: "Lite",
+        price: "29.99",
         priceCurrency: "USD",
       },
       {
